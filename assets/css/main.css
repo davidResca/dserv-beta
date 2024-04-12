@@ -48,6 +48,8 @@ a:hover {
 }
 
 a {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -63,10 +65,6 @@ a {
 .form-check-input:checked {
   background-color: #f23e00;
   border-color: #f23e00;
-}
-
-input::-moz-placeholder {
-  color: #707070 !important;
 }
 
 input::placeholder {
@@ -353,12 +351,19 @@ body {
   content: "";
   width: 50%;
   height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   transform: skewX(-25deg);
 }
 
 .hoverShine .shine:hover::before {
   animation: shine 0.75s;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
 }
 @keyframes shine {
   100% {
@@ -529,8 +534,7 @@ div.zoom img:hover {
 .flags {
   width: 16px;
   height: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-right: 8px;
   border-radius: 50%;
 }
@@ -568,8 +572,7 @@ a.effect .bi:before {
 
 .text-gred {
   background: -webkit-linear-gradient(#f23e00, #eaeaea);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -745,7 +748,7 @@ a:focus {
   text-align: left;
   top: 48px;
   transform-origin: 0 0 0;
-  transition: opacity 0.3s ease 0s;
+  transition: -moz-transform 0.3s ease 0s, opacity 0.3s ease 0s;
   width: 100%;
   z-index: 1000;
 }
@@ -1006,7 +1009,7 @@ a:focus {
   position: absolute;
   top: 48px;
   transform-origin: 0 0 0;
-  transition: opacity 0.3s ease 0s;
+  transition: -moz-transform 0.3s ease 0s, opacity 0.3s ease 0s;
   z-index: 1000;
 }
 
@@ -1054,7 +1057,7 @@ a:focus {
   position: absolute;
   top: 0;
   transform-origin: 0 0 0;
-  transition: opacity 0.4s ease 0s;
+  transition: -moz-transform 0.4s ease 0s, opacity 0.4s ease 0s;
 }
 
 .wsmenu-list .wsmenu-submenu li:hover .wsmenu-submenu-sub {
@@ -1078,7 +1081,7 @@ a:focus {
   position: absolute;
   top: 0;
   transform-origin: 0 0 0;
-  transition: opacity 0.4s ease 0s;
+  transition: -moz-transform 0.4s ease 0s, opacity 0.4s ease 0s;
 }
 
 .wsmenu-list .wsmenu-submenu .wsmenu-submenu-sub li:hover .wsmenu-submenu-sub-sub {
@@ -1714,15 +1717,44 @@ a:focus {
 .show-grid {
   background-color: #ffffff;
 }
-@keyframes rotating {
+
+@-webkit-keyframes rotating {
   from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 .rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
 
@@ -1878,6 +1910,8 @@ a:focus {
     margin: 85px 0 0 0;
     background-color: transparent !important;
     border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
     box-shadow: none !important;
   }
 }
@@ -2349,16 +2383,14 @@ ul#dashboard li.active a {
   display: flex;
   align-items: center;
   width: 94%;
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
   margin-left: 5px;
 }
 .slider-area-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 .slider-area #skip-value-lower,
 .slider-area #skip-value-upper {
@@ -2791,13 +2823,25 @@ ul#dashboard li.active a {
   margin: 0 auto;
   background-color: #f23e00;
   border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
   animation: sk-scaleout 1s infinite ease-in-out;
 }
-@keyframes sk-scaleout {
+@-webkit-keyframes sk-scaleout {
   0% {
     transform: scale(0);
   }
   100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 0;
   }
@@ -2902,10 +2946,10 @@ header {
   z-index: -1;
 }
 .hero .slider1 {
-  background-image: url(../images/slider/slider1.jpg);
+  background-image: url(../images/brand/distryser_brand_transparente.png);
 }
 .hero .slider2 {
-  background-image: url(../images/slider/slider2.jpg);
+  background-image: url(../images/brand/distryser_brand_transparente.png);
 }
 .hero .slider3 {
   background-image: url(../images/slider/slider3.jpg);
@@ -3380,4 +3424,6 @@ header {
   border-radius: 0.5rem;
   text-align: left;
   min-height: 50px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
