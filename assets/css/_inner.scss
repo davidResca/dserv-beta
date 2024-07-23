@@ -87,7 +87,7 @@
 .breadcrumb-area {
     position: relative;
     z-index: 1;
-    background-image: url(../images/breadcrumb/breadcrumb-image.png);
+    background-image: url(../img/banners/news-banner.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,32 +111,32 @@
 
 // contact page image
 .img-contact {
-    background-image: url(../images/breadcrumb/breadcrumb-image-contact.png);
+    background-image: url(../img/banners/contact.webp);
 }
 
 // privacy page image
 .img-privacy {
-    background-image: url(../images/breadcrumb/breadcrumb-image-privacy.png);
+    background-image: url(../img/banners/ppolicy.webp);
 }
 
 // terms page image
 .img-terms {
-    background-image: url(../images/breadcrumb/breadcrumb-image-terms.png);
+    background-image: url(../img/banners/terms&cond_vintage_car_img.webp);
 }
 
 // about page image
 .img-about {
-    background-image: url(../images/breadcrumb/breadcrumb-image-about.png);
+    background-image: url(../img/banners/about_metegol_team_img.webp);
 }
 
 // faq page image
 .img-faq {
-    background-image: url(../images/breadcrumb/breadcrumb-image-faq.png);
+    background-image: url(../img/banners/faq-banner.webp);
 }
 
 // partners page image
 .img-partners {
-    background-image: url(../images/breadcrumb/breadcrumb-image-partners.png);
+    background-image: url(../img/banners/partners-banner.webp);
 }
 
 .page-breadcrumb {
@@ -798,12 +798,12 @@ ul#dashboard {
 .about-img {
     img {
         &:first-child {
-            width: 90%;
+            width: 100%;
             box-shadow: $theme-box-shadow;
         }
     }
 
-    img {
+    /* img {
         &:last-child {
             position: relative;
             width: 60%;
@@ -820,7 +820,7 @@ ul#dashboard {
                 float: right;
             }
         }
-    }
+    } */
 }
 
 // our team css

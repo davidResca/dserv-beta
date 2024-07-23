@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="ThemesLay" />
+
+		<!-- Favicon icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="50x50"
+			href="../assets/img/favicon/favicon.webp"
+		/>
+
+		<!-- theme CSS -->
+		<link href="../assets/css/main.css" rel="stylesheet" />
+
+		<!-- page title -->
+		<title>Distryser | FAQ</title>
+	</head>
+	<body>
+		<!-- preloader section -->
+		<!-- <div class="page-loader">
+    <div class="spinner"></div>
+  </div> -->
+		<!-- modal box for Logout Profile-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="p-5 text-center">
+						<h3 class="fs-2 fw-bold">¿Querés salir de tu cuenta?</h3>
+						<p class="font-medium">Has terminado tu sesion.</p>
+						<div class="d-flex justify-content-between mt-4 custom-button">
+							<a
+								data-bs-dismiss="modal"
+								class="d-flex align-items-center justify-content-center custom-btn-primary font-small button-effect px-2"
+							>
+								<span class="fw-bold">Salir</span></a
+							>
+							<a
+								data-bs-dismiss="modal"
+								class="d-flex align-items-center justify-content-center border theme-border-radius effect px-2"
+								>Seguir en la cuenta<i class="bi bi-arrow-right ms-2"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- page wrapper section -->
+		<div id="wrapper"></div>
+		<!-- Modal: Pedido  -->
+		<div
+			class="offcanvas offcanvas-end cart-menu"
+			tabindex="-1"
+			id="offcanvasRight"
+			aria-labelledby="offcanvasRightLabel"
+		>
+			<!-- cart header -->
+			<div class="offcanvas-header border-bottom">
+				<!-- cart title -->
+				<div class="text-start">
+					<h5 id="offcanvasRightLabel" class="mb-0 fs-5">Orden de compra</h5>
+				</div>
+				<!-- cart close btn -->
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<!-- Pedido: contenido -->
+				<div class="mb-2">
+					<!-- Pedido: lista de productos -->
+					<ul class="list-group list-group-flush">
+						<!-- Item Pedido -->
+						<li class="list-group-item py-3 ps-0 border-top">
+							<div class="row align-items-center">
+								<!-- producto: imagen -->
+								<div class="col-3 col-md-2">
+									<img
+										src="../assets/images/product/baring.jpg"
+										alt="Parts"
+										class="img-fluid"
+									/>
+								</div>
+								<!-- producto: contenido -->
+								<div class="col-4 col-md-6 col-lg-5">
+									<!-- producto: nombre -->
+									<a href="javascript:void(0)" class="text-inherit">
+										<p class="mb-0 font-small">Nombre Producto</p>
+									</a>
+									<span
+										><small class="text-muted font-extra-small"
+											>Cantidad:</small
+										></span
+									>
+									<!-- boton quitar producto -->
+									<div class="mt-2 small lh-1">
+										<a
+											href="javascript:void(0)"
+											class="text-decoration-none text-inherit"
+										>
+											<span class="me-1 align-middle"
+												><i class="bi bi-trash"></i
+											></span>
+											<span class="text-muted font-extra-small"
+												>Quitar del Pedido</span
+											>
+										</a>
+									</div>
+								</div>
+								<!-- botones sumar, restar cantidad de producto -->
+								<div class="col-3 col-md-3 col-lg-3 px-0">
+									<div class="input-group input-spinner">
+										<span class="button-minus btn btn-sm">-</span>
+										<input
+											type="text"
+											value="1"
+											class="quantity-field form-control-sm form-input"
+										/>
+										<span class="button-plus btn btn-sm">+</span>
+									</div>
+								</div>
+								<!-- producto: precio -->
+								<div class="col-2 text-lg-end text-start text-md-end col-md-2">
+									<span class="fw-bold">$5.00</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- botones seguir comprando, actualizar Pedido -->
+					<div class="d-flex justify-content-between mt-4 custom-button">
+						<a
+							href="#"
+							class="d-flex align-items-center custom-btn-primary font-small button-effect px-2"
+							>Seguir comprando</a
+						>
+						<a
+							href="#"
+							class="theme-border custom-btn-secondary font-small button-effect px-2"
+							>Actualizar Pedido</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+		<header>
+			<!-- strip principal -->
+			<div class="topheader theme-bg-secondary py-2">
+				<div class="container">
+					<div class="row align-items-start">
+						<!-- Logo Marca -->
+						<div class="col-12 col-lg-3 align-self-center">
+							<a
+								class="navbar-brand d-flex justify-content-center justify-content-lg-start"
+								href="../index.html"
+							>
+								<img
+									src="../assets/images/brand/distryser_brand_transparente.png"
+									class="img-fluid"
+									alt="Brand Logo"
+									title="Brand Logo"
+								/>
+							</a>
+						</div>
+						<!-- Barra de busqueda -->
+						<div class="col-12 col-lg-6 mt-3 mt-lg-0 align-self-center">
+							<div class="input-group search-input">
+								<input
+									type="text"
+									class="form-control noto-sans"
+									placeholder="&nbsp;Buscar productos"
+									aria-label="Recipient's username"
+									aria-describedby="button-addon2"
+								/>
+								<button
+									class="btn btn-outline-secondary"
+									type="button"
+									id="button-addon2"
+								>
+									<i class="bi bi-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- Botones Main Header -->
+						<div class="col-12 col-lg-3 align-self-center mt-3 mt-lg-0">
+							<div
+								class="d-flex primary-action justify-content-center justify-content-evenly align-items-center"
+							>
+								<a href="./tienda/products-list-view.html" class="ms-0">
+									<i class="bi bi-journal-richtext fs-2"></i>
+									<span class="d-flex noto-sans">Catálogo</span>
+								</a>
+								<div class="dropdown ms-0">
+									<a
+										href="#"
+										class="d-flex flex-column align-items-center"
+										id="cuentaDropdown"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<i class="bi bi-person-square fs-2 text-danger"></i>
+										<span class="d-flex align-items-center">
+											Cuenta
+											<i
+												class="bi bi-caret-down-fill ms-1 text-danger pt-1"
+											></i>
+										</span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="cuentaDropdown">
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="./cuentaUsuario/my-account.html"
+												>Mi cuenta</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="./cuentaUsuario/signin.html"
+												>Ingresar</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="./cuentaUsuario/signup.html"
+												>Registrarse</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item text-start" href="">Salir</a>
+										</li>
+									</ul>
+								</div>
+								<a
+									href="javascript:void(0)"
+									class="position-relative"
+									data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvasRight"
+									aria-controls="offcanvasRight"
+								>
+									<i class="bi bi-cart fs-2"></i>
+									<span class="d-flex noto-sans">Pedido</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Barra de Navegacion -->
+			<div class="bg-yellow-116 main-nav theme-box-shadow">
+				<div class="container">
+					<div class="row position-relative g-0">
+						<div class="col-12">
+							<div class="wsmenucontainer clearfix">
+								<div class="overlapblackbg"></div>
+								<div class="wsmobileheader clearfix">
+									<a id="wsnavtoggle" class="animated-arrow"><span></span></a>
+								</div>
+								<!-- Main Menu HTML Code -->
+								<div class="header color-black">
+									<nav class="wsmenu clearfix center">
+										<!-- Desplegables -->
+										<ul
+											class="mobile-sub wsmenu-list nav-items noto-sans fw-medium fs-6 tracking-wide"
+										>
+											<!-- link a home -->
+											<li>
+												<a class="color-black" href="../index.html">Inicio</a>
+											</li>
+											<!-- Productos: Menú desplegable -->
+											<li>
+												<a
+													class="color-black"
+													href="./tienda/products-list-view.html"
+													>Productos&nbsp;
+													<span class="bi bi-chevron-down color-black"></span
+												></a>
+												<div class="megamenu clearfix">
+													<div class="container">
+														<div class="row">
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Dirección</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Headlights & Lighting</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fuel
+																		System & Filters</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Body
+																		Parts & Mirrors</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Interior
+																		Accessories</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Frenos</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Headlights & Lighting</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fuel
+																		System & Filters</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Body
+																		Parts & Mirrors</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Interior
+																		Accessories</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Periféricos</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Engine &
+																		Drivetrain</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Oils &
+																		Lubricants</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Engine
+																		Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Suspension System</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Performance Parts</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Transmisión</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tools &
+																		Garage</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Other
+																		Auto Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fishing
+																		Reel</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Repair
+																		Parts</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Suspensión</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tools &
+																		Garage</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Other
+																		Auto Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fishing
+																		Reel</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Repair
+																		Parts</a
+																	>
+																</li>
+															</ul>
+															<div
+																class="d-none d-lg-flex col-lg-2 justify-content-center"
+															>
+																<img
+																	style="
+																		text-align: center;
+																		width: auto;
+																		height: 250px;
+																	"
+																	src="./assets/img/lg_distry/Imagen de WhatsApp 2024-07-04 a las 19.07.35_57cc53c3.jpg"
+																	alt=""
+																/>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<!-- Noticias -->
+											<li>
+												<a class="color-black" href="./noticias/news.html"
+													>Noticias&nbsp;
+												</a>
+											</li>
+											<!-- Contacto -->
+											<li>
+												<a class="color-black" href="./contact.html"
+													>Contacto&nbsp;</a
+												>
+											</li>
+											<!-- Sobre nosotros -->
+											<li>
+												<a class="color-black" href="#"
+													>Nosotros&nbsp;
+													<span class="bi bi-chevron-down color-black"></span
+												></a>
+												<div class="megamenu clearfix halfmenu">
+													<div class="container">
+														<div class="row">
+															<ul class="col-12 col-xl-6 link-list">
+																<li>
+																	<a href="./about.html"
+																		><i class="bi bi-chevron-right"></i>Quiénes
+																		somos</a
+																	>
+																</li>
+																<li>
+																	<a href="./faq.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Preguntas frecuentes</a
+																	>
+																</li>
+																<li>
+																	<a href="./partners.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Proveedores</a
+																	>
+																</li>
+																<li>
+																	<a href="./privacy.html"
+																		><i class="bi bi-chevron-right"></i>Politica
+																		de privacidad</a
+																	>
+																</li>
+																<li>
+																	<a href="#"
+																		><i class="bi bi-chevron-right"></i>Trabajá
+																		con nosotros</a
+																	>
+																</li>
+																<li>
+																	<a href="./sucursales.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Sucursales</a
+																	>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</nav>
+									<!--Menu HTML Code-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Body Part - hero section -->
+		<!-- breadcrumb section -->
+		<div class="breadcrumb-area img-faq">
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- col -->
+					<div class="col-12">
+						<!-- breadcrumb -->
+						<div class="page-breadcrumb">
+							<h2 class="heading">Preguntas Frecuentes</h2>
+							<div class="mt-3">
+								<ul class="list">
+									<li><a href="../index.html">Home&nbsp;</a></li>
+									<li>Preguntas Frecuentes</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- faq section -->
+		<div class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 my-5">
+						<h2 class="text-center mb-3 fs-2 fw-bold">Preguntas Frecuentes</h2>
+						<p class="text-center theme-text-accent-one mb-0 max-1">
+							Proin a sagittis erat. Nam id orci at metus pretium mollis eget
+							quis tellus.
+						</p>
+					</div>
+					<div class="col-12">
+						<!-- Order question -->
+						<h3 class="mb-3">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="28.64"
+									viewBox="0 0 30 28.64"
+								>
+									<g id="order" transform="translate(-42 -927.56)">
+										<path
+											id="Path_18"
+											data-name="Path 18"
+											d="M56.362,940.364v14.687c0,.383-.007.766-.007,1.149l-.59-.258-3.737-1.647L47.505,952.3l-3.9-1.723c-.536-.236-1.059-.495-1.6-.721V935.174c0-.382,0-.765.006-1.148.2.089.4.178.6.264,1.247.553,2.5,1.1,3.746,1.65q1.743.766,3.485,1.536c.345.153.69.3,1.038.456q1.957.861,3.919,1.727l1.564.689Z"
+										/>
+										<path
+											id="Path_19"
+											data-name="Path 19"
+											d="M57.648,940.351l.865-.383c1.184-.523,2.374-1.044,3.558-1.567.83-.367,1.663-.731,2.493-1.1v3.8a.644.644,0,0,0,.638.638.65.65,0,0,0,.638-.638v-4.356c.224-.109.486-.218.731-.323.192-.083.38-.169.568-.252q1.953-.861,3.907-1.72a.24.24,0,0,1,.028-.013c.31-.137.639-.274.926-.408v14.135c0,.571-.006,1.145,0,1.717-.412.182-.82.364-1.232.545l-3.737,1.647q-2.26,1-4.523,1.992L58.6,955.785c-.319.141-.642.275-.961.412V941.835c0-.495.01-.989.007-1.484Z"
+										/>
+										<path
+											id="Path_20"
+											data-name="Path 20"
+											d="M56.987,939.244c-.408-.179-.814-.358-1.222-.54l-3.737-1.647-4.523-1.991q-1.953-.861-3.909-1.723c-.2-.09-.4-.176-.6-.265l.006,0,.074-.028q1.872-.738,3.74-1.478l2.668-1.053c.482.2.967.4,1.449.6l3.741,1.538q2.255.928,4.509,1.854l3.913,1.609c.172.07.345.143.514.217-.37.163-.741.325-1.108.488L58.6,938.542c-.533.236-1.076.456-1.609.7Z"
+										/>
+										<path
+											id="Path_21"
+											data-name="Path 21"
+											d="M71,933.084c-.077.032-.154.067-.23.1l-3.737,1.647q-.9.4-1.8.791c-.476-.194-.948-.389-1.424-.584q-1.872-.77-3.74-1.538-2.254-.929-4.51-1.854l-3.913-1.609c-.15-.06-.3-.124-.45-.188.045-.019.09-.035.135-.054l3.922-1.548,1.283-.507c.156-.061.316-.119.472-.182.46.182.923.363,1.382.545q1.872.738,3.741,1.478l4.509,1.781,3.922,1.548C70.7,932.963,70.851,933.023,71,933.084Z"
+										/>
+									</g>
+								</svg>
+							</span>
+							<span class="ms-3">Pedidos</span>
+						</h3>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseOne"
+										aria-expanded="true"
+										aria-controls="collapseOne"
+									>
+										<span class="fs-1 text-gred">P1.</span>
+										<span class="ms-5">How can I order?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseOne"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingOne"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It
+										is shown by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo"
+										aria-expanded="false"
+										aria-controls="collapseTwo"
+									>
+										<span class="fs-1 text-gred">P2.</span>
+										<span class="ms-5">I ordered, what happens then ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseTwo"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong>
+										It is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseThree"
+										aria-expanded="false"
+										aria-controls="collapseThree"
+									>
+										<span class="fs-1 text-gred">P3.</span>
+										<span class="ms-5">Is there a minimum order ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseThree"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample"
+								>
+									<div class="accordion-body">
+										<strong>This is the third item's accordion body.</strong> It
+										is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+						</div>
+						<!-- shipping question -->
+						<h3 class="mb-3 mt-5">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="24.012"
+									viewBox="0 0 30 24.012"
+								>
+									<g id="shipping" transform="translate(-2.37 -6.508)">
+										<path
+											id="Path_22"
+											data-name="Path 22"
+											d="M31.765,22.612a.608.608,0,0,0-.6.6V25.7H9.337V7.113a.608.608,0,0,0-.6-.605H2.975a.608.608,0,0,0-.605.605.6.6,0,0,0,.605.6H8.138v18.6a.608.608,0,0,0,.6.605h1.987a2.25,2.25,0,0,0-.432,1.324,2.284,2.284,0,1,0,4.136-1.324H26.084a2.25,2.25,0,0,0-.432,1.324,2.284,2.284,0,1,0,4.136-1.324h1.977a.608.608,0,0,0,.6-.605v-3.09A.608.608,0,0,0,31.765,22.612Z"
+										/>
+										<path
+											id="Path_23"
+											data-name="Path 23"
+											d="M23.128,8.627H11.612a.364.364,0,0,0-.365.364v14.4a.364.364,0,0,0,.365.364H28.886a.364.364,0,0,0,.365-.364V8.991a.364.364,0,0,0-.365-.364Zm-.355,5.556-.278-.556a.377.377,0,0,0-.643,0L21.209,14.9l-.643-1.276a.377.377,0,0,0-.643,0L19.289,14.9l-.643-1.276a.377.377,0,0,0-.643,0l-.278.556V9.346h5.038v4.837Z"
+										/>
+									</g>
+								</svg>
+							</span>
+							<span class="ms-3">Envíos</span>
+						</h3>
+						<div class="accordion mb-4" id="accordionExample2">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOneR">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseOneR"
+										aria-expanded="true"
+										aria-controls="collapseOneR"
+									>
+										<span class="fs-1 text-gred">P1.</span>
+										<span class="ms-5">Who sends the products ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseOneR"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingOneR"
+									data-bs-parent="#accordionExample2"
+								>
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It
+										is shown by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwoR">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseTwoR"
+										aria-expanded="false"
+										aria-controls="collapseTwoR"
+									>
+										<span class="fs-1 text-gred">P2.</span>
+										<span class="ms-5"
+											>I am not often at home, can I also deliver somewhere else
+											?</span
+										>
+									</button>
+								</h2>
+								<div
+									id="collapseTwoR"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingTwoR"
+									data-bs-parent="#accordionExample2"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong>
+										It is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThreeR">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseThreeR"
+										aria-expanded="false"
+										aria-controls="collapseThreeR"
+									>
+										<span class="fs-1 text-gred">P3.</span>
+										<span class="ms-5">Can I also order outside India ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseThreeR"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingThreeR"
+									data-bs-parent="#accordionExample2"
+								>
+									<div class="accordion-body">
+										<strong>This is the third item's accordion body.</strong> It
+										is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFourR">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseFourR"
+										aria-expanded="false"
+										aria-controls="collapseFourR"
+									>
+										<span class="fs-1 text-gred">P4.</span>
+										<span class="ms-5">When does my order arrive ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseFourR"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingFourR"
+									data-bs-parent="#accordionExample2"
+								>
+									<div class="accordion-body">
+										<strong>This is the third item's accordion body.</strong> It
+										is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFiveR">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseFiveR"
+										aria-expanded="false"
+										aria-controls="collapseFiveR"
+									>
+										<span class="fs-1 text-gred">P5.</span>
+										<span class="ms-5"
+											>I could not pick up the package and it was sent back, so
+											what ?</span
+										>
+									</button>
+								</h2>
+								<div
+									id="collapseFiveR"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingFiveR"
+									data-bs-parent="#accordionExample2"
+								>
+									<div class="accordion-body">
+										<strong>This is the third item's accordion body.</strong> It
+										is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+						</div>
+						<!-- Payment question -->
+						<h3 class="mb-3 mt-5">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="25.47"
+									viewBox="0 0 30 25.47"
+								>
+									<g id="payment" transform="translate(-6.715 -61.28)">
+										<path
+											id="Path_24"
+											data-name="Path 24"
+											d="M26.227,77.2a4.092,4.092,0,0,1-4.087-4.087v-3.53A4.092,4.092,0,0,1,26.227,65.5h1.649c.038,0,.077,0,.116,0h6.966V63.633A2.3,2.3,0,0,0,32.6,61.28H9.069a2.355,2.355,0,0,0-2.354,2.353V84.4A2.355,2.355,0,0,0,9.069,86.75H32.6A2.305,2.305,0,0,0,34.958,84.4V77.2Z"
+										/>
+										<path
+											id="Path_25"
+											data-name="Path 25"
+											d="M35.987,67.229h-.005a.289.289,0,0,0-.029,0H27.992c-.013,0-.025,0-.037,0H26.227a2.355,2.355,0,0,0-2.354,2.353v3.53a2.355,2.355,0,0,0,2.354,2.354h9.76v-.005a.749.749,0,0,0,.728-.757V67.986A.75.75,0,0,0,35.987,67.229Zm-8.776,5.449a1.331,1.331,0,1,1,1.331-1.331A1.331,1.331,0,0,1,27.211,72.678Z"
+										/>
+									</g>
+								</svg>
+							</span>
+							<span class="ms-3">Payment</span>
+						</h3>
+						<div class="accordion mb-4" id="accordionExample3">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOneA">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseOneA"
+										aria-expanded="true"
+										aria-controls="collapseOneA"
+									>
+										<span class="fs-1 text-gred">P1.</span>
+										<span class="ms-5">How can I pay ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseOneA"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingOneA"
+									data-bs-parent="#accordionExample3"
+								>
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It
+										is shown by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwoA">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseTwoA"
+										aria-expanded="false"
+										aria-controls="collapseTwoA"
+									>
+										<span class="fs-1 text-gred">P2.</span>
+										<span class="ms-5">When do I have to pay ?</span>
+									</button>
+								</h2>
+								<div
+									id="collapseTwoA"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingTwoA"
+									data-bs-parent="#accordionExample3"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong>
+										It is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+						</div>
+						<!-- return question -->
+						<h3 class="mb-3 mt-5">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="30"
+									height="30"
+									viewBox="0 0 30 30"
+								>
+									<g id="return" transform="translate(0 -482)">
+										<path
+											id="Path_26"
+											data-name="Path 26"
+											d="M12.846,486.218l2.037,1.035V482H10.02v5.253l2.034-1.034A.877.877,0,0,1,12.846,486.218Z"
+										/>
+										<path
+											id="Path_27"
+											data-name="Path 27"
+											d="M24.9,492.619v-9.74a.878.878,0,0,0-.879-.879H16.641v6.683a.878.878,0,0,1-1.333.753l-2.857-1.452-2.916,1.482a.877.877,0,0,1-1.271-.783l0-6.683H.879a.878.878,0,0,0-.879.879v23.144a.878.878,0,0,0,.879.879h9.74A10.969,10.969,0,0,1,24.9,492.619Z"
+										/>
+										<path
+											id="Path_28"
+											data-name="Path 28"
+											d="M27.3,496.271a9.213,9.213,0,1,0,2.7,6.515A9.186,9.186,0,0,0,27.3,496.271Zm-2.81,9.4a3.389,3.389,0,0,1-2.4,1h-4.1a.879.879,0,1,1,0-1.758h4.1a1.67,1.67,0,0,0,0-3.34H19.641l.522.521a.876.876,0,1,1-1.235,1.243l-2.02-2.015a.877.877,0,0,1,0-1.24l2.015-2.019a.876.876,0,1,1,1.243,1.236l-.516.517H22.09a3.437,3.437,0,0,1,2.4,5.858Z"
+										/>
+									</g>
+								</svg>
+							</span>
+							<span class="ms-3">Devoluciones</span>
+						</h3>
+						<div class="accordion mb-4" id="accordionExample4">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOneD">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseOneD"
+										aria-expanded="true"
+										aria-controls="collapseOneD"
+									>
+										<span class="fs-1 text-gred">P1.</span>
+										<span class="ms-5"
+											>The package arrived, but there are missing products, what
+											now ?</span
+										>
+									</button>
+								</h2>
+								<div
+									id="collapseOneD"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingOneD"
+									data-bs-parent="#accordionExample4"
+								>
+									<div class="accordion-body">
+										<strong>This is the first item's accordion body.</strong> It
+										is shown by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwoD">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseTwoD"
+										aria-expanded="false"
+										aria-controls="collapseTwoD"
+									>
+										<span class="fs-1 text-gred">P2.</span>
+										<span class="ms-5"
+											>One or more products have been damaged during transport,
+											and now ?</span
+										>
+									</button>
+								</h2>
+								<div
+									id="collapseTwoD"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingTwoD"
+									data-bs-parent="#accordionExample3"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong>
+										It is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThreeD">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseThreeD"
+										aria-expanded="false"
+										aria-controls="collapseThreeD"
+									>
+										<span class="fs-1 text-gred">P3.</span>
+										<span class="ms-5"
+											>I sent an e-mail, but Ido not get an answer , why ?</span
+										>
+									</button>
+								</h2>
+								<div
+									id="collapseThreeD"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingThreeD"
+									data-bs-parent="#accordionExample3"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong>
+										It is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFourD">
+									<button
+										class="accordion-button fw-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseFourD"
+										aria-expanded="false"
+										aria-controls="collapseFourD"
+									>
+										<span class="fs-1 text-gred">P4.</span>
+										<span class="ms-5"
+											>I do not like the products and I Want to send everything
+											back. How do I do that ?</span
+										>
+									</button>
+								</h2>
+								<div
+									id="collapseFourD"
+									class="accordion-collapse collapse"
+									aria-labelledby="headingFourD"
+									data-bs-parent="#accordionExample3"
+								>
+									<div class="accordion-body">
+										<strong>This is the second item's accordion body.</strong>
+										It is hidden by default, until the collapse plugin adds the
+										appropriate classes that we use to style each element. These
+										classes control the overall appearance, as well as the
+										showing and hiding via CSS transitions. You can modify any
+										of this with custom CSS or overriding our default variables.
+										It's also worth noting that just about any HTML can go
+										within the accordion body, though the transition does limit
+										overflow.
+									</div>
+								</div>
+							</div>
+							<!-- repetable -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Part -->
+		<footer class="footer pt-4">
+			<!-- Contacto  -->
+			<div class="container">
+				<div class="row">
+					<!-- Información de contacto -->
+					<div class="col-12 col-md-6 col-lg-4">
+						<h3 class="fs-5 mb-4 mt-0 mt-lg-5 text-uppercase futura-std-xb">
+							Contactanos en
+						</h3>
+						<div class="d-flex">
+							<p class="mb-0"><i class="bi bi-geo-alt-fill fs-5 me-3"></i></p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Dirección</span>
+								<span class="d-flex">Leguizamón Onésimo 459, Neuquén, Neuquén</span>
+								<span class="d-flex">Río Negro 519, Neuquén, Neuquén</span>
+								<span class="d-flex">Miguel Muñoz 67, Cipolletti, Rio Negro</span>
+							</p>
+						</div>
+						<div class="d-flex mt-3">
+							<p class="mb-0"><i class="bi bi-telephone-fill fs-5 me-3"></i></p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Líneas de contacto:</span>
+								<span class="d-flex">
+									Sucursal Leguizamón: (0299) 448-1628 <br />
+									Sucursal Río Negro: (0299) 447-0670 <br />
+									Sucursal Cipolletti: (0299) 477-8352 <br />
+									Horarios de atención: <br />
+									Lunes a Viernes de 09:00 a 18:00
+									<br>
+									Sábados de 09:00 a 12:00
+								</span>
+							</p>
+						</div>
+						<div class="d-flex mt-3">
+							<p class="mb-0">
+								<i class="bi bi-envelope-open-fill fs-5 me-3"></i>
+							</p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Envianos un correo a:</span>
+								<span class="d-flex">info@distryser.com.ar</span>
+							</p>
+						</div>
+					</div>
+					<!-- Enlaces útiles -->
+					<div class="col-12 col-md-6 col-lg-5">
+						<div class="row">
+							<div class="col-12">
+								<h3 class="fs-5 mb-4 mt-5 text-uppercase futura-std-xb">
+									Información
+								</h3>
+							</div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<ul class="footer-link">
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)"
+													>Información sobre Envíos</a
+												>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Política de privacidad</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Preguntas Frecuentes</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-6">
+										<ul class="footer-link">
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Mi cuenta</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Historial de compra</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Noticias</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Partners</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 custom">
+						<div class="mt-5 mt-md-0 mt-lg-5">
+							<a href="../index.html">
+								<img
+									src="../assets/img/lg_distry/distryser_marca__footer.webp"
+									class="img-fluid"
+									alt="Brand light"
+								/>
+							</a>
+						</div>
+						<p class="mt-4 font-small lh-base">
+							Desde 1995, hemos destacado por nuestra dedicación y excelencia en
+							el servicio. Con un catálogo de más de 15,000 productos, nos
+							centramos en comprender las necesidades de nuestros clientes y
+							establecer relaciones sólidas con partners de confianza. Nuestro
+							equipo, altamente comprometido y profesional, asegura una
+							experiencia positiva y personalizada, fortaleciendo la relación
+							con cada cliente.
+						</p>
+						<h3 class="mt-4 h5 mb-4 futura-std-xb">Seguinos en:</h3>
+						<div class="d-flex social mt-3">
+							<a href="javascript:void(0)" class="fs-4 pe-3"
+								><i class="bi bi-facebook"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-twitter"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-linkedin"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-instagram"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="row my-2">
+					<ul
+						class="d-flex flex-row flex-wrap justify-content-center align-items-center"
+					></ul>
+				</div>
+			</div>
+			<!-- Info marca y RRSS -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row py-2"></div>
+				</div>
+			</div>
+			<a
+				href="#wrapper"
+				data-type="section-switch"
+				class="scrollup theme-border-radius"
+				><i class="bi bi-chevron-double-up"></i
+			></a>
+		</footer>
+
+		<!-- quick view modal -->
+		<div
+			class="modal fade"
+			id="quickViewModal"
+			tabindex="-1"
+			aria-labelledby="quickViewModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body p-5 pb-0">
+						<div
+							class="position-absolute top-0 end-0 me-3 mt-3"
+							id="quickViewModalLabel"
+						>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<!-- product gallery -->
+								<div class="product-gallery">
+									<div class="slider slider-for">
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../assets/images/product/parts-product01.png);
+											"
+										>
+											<img
+												src="../assets/images/product/parts-product01.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../assets/images/product/parts-product02.png);
+											"
+										>
+											<img
+												src="../assets/images/product/parts-product02.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../assets/images/product/parts-product03.png);
+											"
+										>
+											<img
+												src="../assets/images/product/parts-product03.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../assets/images/product/parts-product04.png);
+											"
+										>
+											<img
+												src="../assets/images/product/parts-product04.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../assets/images/product/parts-product05.png);
+											"
+										>
+											<img
+												src="../assets/images/product/parts-product05.png"
+												alt="solar"
+											/>
+										</div>
+									</div>
+									<div class="slider slider-nav gallery-thumb">
+										<div>
+											<img
+												src="../assets/images/product/parts-product01.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../assets/images/product/parts-product02.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../assets/images/product/parts-product03.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../assets/images/product/parts-product04.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../assets/images/product/parts-product05.png"
+												alt="solar"
+											/>
+										</div>
+									</div>
+									<!-- products thumb -->
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="ps-lg-8 mt-6 mt-lg-0">
+									<a href="#!" class="mb-3 d-block">Wheel Tyres</a>
+									<h2 class="mb-1 h4">Integer Iaculis Porttitor Risus</h2>
+									<div class="mb-4">
+										<small class="text-warning">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i
+										></small>
+										<a href="#" class="ms-2">(30 reviews)</a>
+									</div>
+									<div class="fs-4">
+										<span class="fw-bold theme-text-secondary">$32</span>
+										<span class="text-decoration-line-through text-muted"
+											>$35</span
+										><span
+											><small class="fs-6 ms-2 text-danger"
+												>26% Off</small
+											></span
+										>
+									</div>
+									<hr class="my-6" />
+									<div class="mb-4">
+										<h3 class="h5 mb-3">Material</h3>
+										<button
+											type="button"
+											class="btn btn-outline-secondary mb-2 mb-lg-0"
+										>
+											Steel
+										</button>
+										<button
+											type="button"
+											class="btn btn-outline-secondary mb-2 mb-lg-0"
+										>
+											Aluminium
+										</button>
+										<button
+											type="button"
+											class="btn btn-outline-secondary mb-2 mb-lg-0"
+										>
+											Thorium
+										</button>
+									</div>
+									<div
+										class="mt-3 row justify-content-start g-2 align-items-center"
+									>
+										<div class="col-12 col-md-3">
+											<div class="input-group input-spinner">
+												<span class="button-minus btn btn-sm">-</span>
+												<input
+													type="text"
+													value="1"
+													class="quantity-field form-control-sm form-input"
+												/>
+												<span class="button-plus btn btn-sm">+</span>
+											</div>
+										</div>
+										<div class="col-12 col-md-5 custom-button">
+											<!-- button -->
+											<!-- btn -->
+											<button
+												type="button"
+												class="custom-btn-primary font-small button-effect justify-content-center align-items-center d-flex"
+											>
+												<i class="feather-icon icon-shopping-bag me-2"></i>Add
+												to cart
+											</button>
+										</div>
+										<div class="col-12 col-md-4">
+											<!-- btn -->
+											<a
+												class="btn btn-light"
+												href="#"
+												data-bs-toggle="tooltip"
+												data-bs-html="true"
+												aria-label="Compare"
+												><i class="bi bi-arrow-left-right"></i
+											></a>
+											<a
+												class="btn btn-light"
+												href="#"
+												data-bs-toggle="tooltip"
+												data-bs-html="true"
+												aria-label="Wishlist"
+												><i class="bi bi-heart"></i
+											></a>
+										</div>
+									</div>
+									<hr class="my-6" />
+									<div>
+										<table class="table table-borderless">
+											<tbody>
+												<tr>
+													<td>Product Code:</td>
+													<td>FBB00255</td>
+												</tr>
+												<tr>
+													<td>Availability:</td>
+													<td>
+														<span class="badge text-bg-success">In Stock</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Wheel</td>
+												</tr>
+												<tr>
+													<td>Shipping:</td>
+													<td>
+														<small
+															>01 day shipping.<span class="text-muted"
+																>( Free pickup today)</span
+															></small
+														>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer text-center justify-content-center">
+						<p>See full details</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Dependencies: Bootstrap Bundle with Popper / jQuery first -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/bootstrap.bundle.min.js"></script>
+		<script src="../assets/js/slick.min.js"></script>
+		<script src="../assets/js/slick-animation.min.js"></script>
+		<script src="../assets/js/wow.min.js"></script>
+
+		<!-- theme main js -->
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>

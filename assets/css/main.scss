@@ -1,3 +1,6 @@
+@import 'fonts.scss';
+@import 'icons.scss';
+@import 'icon-list.scss';
 @import 'vandors';
 @import 'var';
 @import 'reset';
@@ -394,6 +397,10 @@ header {
             background-color: #f59758;
         }
     }
+
+    .detail-price {
+        font-size: 12px;
+    }
 }
 
 /*-- Offer Banner section --*/
@@ -416,17 +423,55 @@ header {
     }
 
     .card1 {
-        width: 100%;
         height: auto;
         min-height: 405px;
-        background-color: $theme-accent-three;
+        background-image: url("../img/hero-index/slider01.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .content-description {
+            font-family: "Futura", sans-serif;
+            font-weight: 600;
+            font-size: 3.5rem;
+            line-height: 3rem;
+        }
+        .row {
+            height: auto;
+            margin: auto;
+        }
     }
 
     .card1-Sub {
         width: 100%;
         height: auto;
         min-height: 405px;
-        background-color: $theme-accent-two;
+        /* background-color: $theme-accent-two; */
+        background-image: url("../img/hero-index/slider2.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .row {
+            height: auto;
+            margin: auto;
+        }
+    }
+
+    .card1-Sub2 {
+        width: 100%;
+        height: auto;
+        min-height: 405px;
+        /* background-color: $theme-accent-two; */
+        background-image: url("../img/hero-index/slider3.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .row {
+            height: auto;
+            margin: auto;
+        }
     }
 
     .card2 {
@@ -801,4 +846,101 @@ header {
         min-height: 50px;
     }
 
+}
+
+
+/* Auxiliares */
+
+.img-fw-h300 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.max-width-250 {
+    max-width: 250px;
+}
+
+.precios {
+    font-size: .7rem;
+    font-weight: 400;
+    height: 60px;
+}
+
+.precios-bg1 {
+    background-color: $theme-accent-four;
+}
+
+.precios-bg2 {
+    background-color: $theme-accent-three;
+}
+
+.precios-bg3 {
+    background-color: $theme-accent-one;
+    color: white;
+}
+
+.nav-items {
+    font-size: .9rem;
+    font-weight: 400;
+    gap: 1rem;
+}
+
+.sub-category {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.bebas-neue {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.noto-sans {
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* .futura {
+    font-family: "Futura", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 3rem;
+}
+ */
+/* Iconos carrito tarjeta productos */
+.icon {
+    &--out-of-stock {
+        @include icon('out-of-stock', 30px, 30px);
+    }
+
+    &--medium-stock {
+        @include icon('medium-stock', 30px, 30px);
+    }
+
+    &--full-stock {
+        @include icon('full-stock', 30px, 30px);
+    }
+
+    &--plus-icon {
+        @include icon('plus-icon', 20px, 20px);
+        /* border: 1px solid black; */
+    }
+
+    &--minus-icon {
+        @include icon('minus-icon', 20px, 20px);
+
+        align-self: center;
+        /* border: 1px solid black; */
+    }
+}
+
+.btn-add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em 0;
+    background: $theme-primary-color;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
 }

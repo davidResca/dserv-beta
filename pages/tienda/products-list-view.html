@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="ThemesLay" />
+		<!-- Favicon icon -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="50x50"
+			href="../../assets/img/favicon/favicon.webp"
+		/>
+		<!-- theme CSS -->
+		<link href="../../assets/css/main.css" rel="stylesheet" />
+		<!-- page title -->
+		<title>Distryser | Productos</title>
+	</head>
+	<body>
+		<!-- preloader section -->
+		<!-- <div class="page-loader">
+			<div class="spinner"></div>
+		</div> -->
+		<!-- modal box for Logout Profile-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="p-5 text-center">
+						<h3 class="fs-2 fw-bold">¿Querés salir de tu cuenta?</h3>
+						<p class="font-medium">Has terminado tu sesion.</p>
+						<div class="d-flex justify-content-between mt-4 custom-button">
+							<a
+								data-bs-dismiss="modal"
+								class="d-flex align-items-center justify-content-center custom-btn-primary font-small button-effect px-2"
+							>
+								<span class="fw-bold">Salir</span></a
+							>
+							<a
+								data-bs-dismiss="modal"
+								class="d-flex align-items-center justify-content-center border theme-border-radius effect px-2"
+								>Seguir en la cuenta<i class="bi bi-arrow-right ms-2"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- page wrapper section -->
+		<div id="wrapper"></div>
+		<!-- Modal: Pedido  -->
+		<div
+			class="offcanvas offcanvas-end cart-menu"
+			tabindex="-1"
+			id="offcanvasRight"
+			aria-labelledby="offcanvasRightLabel"
+		>
+			<!-- cart header -->
+			<div class="offcanvas-header border-bottom">
+				<!-- cart title -->
+				<div class="text-start">
+					<h5 id="offcanvasRightLabel" class="mb-0 fs-5">Orden de compra</h5>
+				</div>
+				<!-- cart close btn -->
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<!-- Pedido: contenido -->
+				<div class="mb-2">
+					<!-- Pedido: lista de productos -->
+					<ul class="list-group list-group-flush">
+						<!-- Item Pedido -->
+						<li class="list-group-item py-3 ps-0 border-top">
+							<div class="row align-items-center">
+								<!-- producto: imagen -->
+								<div class="col-3 col-md-2">
+									<img
+										src="../../assets/images/product/baring.jpg"
+										alt="Parts"
+										class="img-fluid"
+									/>
+								</div>
+								<!-- producto: contenido -->
+								<div class="col-4 col-md-6 col-lg-5">
+									<!-- producto: nombre -->
+									<a href="javascript:void(0)" class="text-inherit">
+										<p class="mb-0 font-small">Nombre Producto</p>
+									</a>
+									<span
+										><small class="text-muted font-extra-small"
+											>Cantidad:</small
+										></span
+									>
+									<!-- boton quitar producto -->
+									<div class="mt-2 small lh-1">
+										<a
+											href="javascript:void(0)"
+											class="text-decoration-none text-inherit"
+										>
+											<span class="me-1 align-middle"
+												><i class="bi bi-trash"></i
+											></span>
+											<span class="text-muted font-extra-small"
+												>Quitar del Pedido</span
+											>
+										</a>
+									</div>
+								</div>
+								<!-- botones sumar, restar cantidad de producto -->
+								<div class="col-3 col-md-3 col-lg-3 px-0">
+									<div class="input-group input-spinner">
+										<span class="button-minus btn btn-sm">-</span>
+										<input
+											type="text"
+											value="1"
+											class="quantity-field form-control-sm form-input"
+										/>
+										<span class="button-plus btn btn-sm">+</span>
+									</div>
+								</div>
+								<!-- producto: precio -->
+								<div class="col-2 text-lg-end text-start text-md-end col-md-2">
+									<span class="fw-bold">$5.00</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- botones seguir comprando, actualizar Pedido -->
+					<div class="d-flex justify-content-between mt-4 custom-button">
+						<a
+							href="#"
+							class="d-flex align-items-center custom-btn-primary font-small button-effect px-2"
+							>Seguir comprando</a
+						>
+						<a
+							href="#"
+							class="theme-border custom-btn-secondary font-small button-effect px-2"
+							>Actualizar Pedido</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+		<header>
+			<!-- strip principal -->
+			<div class="topheader theme-bg-secondary py-2">
+				<div class="container">
+					<div class="row align-items-start">
+						<!-- Logo Marca -->
+						<div class="col-12 col-lg-3 align-self-center">
+							<a
+								class="navbar-brand d-flex justify-content-center justify-content-lg-start"
+								href="../../index.html"
+							>
+								<img
+									src="../../assets/images/brand/distryser_brand_transparente.png"
+									class="img-fluid"
+									alt="Brand Logo"
+									title="Brand Logo"
+								/>
+							</a>
+						</div>
+						<!-- Barra de busqueda -->
+						<div class="col-12 col-lg-6 mt-3 mt-lg-0 align-self-center">
+							<div class="input-group search-input">
+								<input
+									type="text"
+									class="form-control noto-sans"
+									placeholder="&nbsp;Buscar productos"
+									aria-label="Recipient's username"
+									aria-describedby="button-addon2"
+								/>
+								<button
+									class="btn btn-outline-secondary"
+									type="button"
+									id="button-addon2"
+								>
+									<i class="bi bi-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- Botones Main Header -->
+						<div class="col-12 col-lg-3 align-self-center mt-3 mt-lg-0">
+							<div
+								class="d-flex primary-action justify-content-center justify-content-evenly align-items-center"
+							>
+								<a href="./products-list-view.html" class="ms-0">
+									<i class="bi bi-journal-richtext fs-2"></i>
+									<span class="d-flex noto-sans">Catálogo</span>
+								</a>
+								<div class="dropdown ms-0">
+									<a
+										href="#"
+										class="d-flex flex-column align-items-center"
+										id="cuentaDropdown"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<i class="bi bi-person-square fs-2 text-danger"></i>
+										<span class="d-flex align-items-center">
+											Cuenta
+											<i
+												class="bi bi-caret-down-fill ms-1 text-danger pt-1"
+											></i>
+										</span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="cuentaDropdown">
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="../cuentaUsuario/my-account.html"
+												>Mi cuenta</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="../cuentaUsuario/signin.html"
+												>Ingresar</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="../cuentaUsuario/signup.html"
+												>Registrarse</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item text-start" href="">Salir</a>
+										</li>
+									</ul>
+								</div>
+								<a
+									href="javascript:void(0)"
+									class="position-relative"
+									data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvasRight"
+									aria-controls="offcanvasRight"
+								>
+									<i class="bi bi-cart fs-2"></i>
+									<span class="d-flex noto-sans">Pedido</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Barra de Navegacion -->
+			<div class="bg-yellow-116 main-nav theme-box-shadow">
+				<div class="container">
+					<div class="row position-relative g-0">
+						<div class="col-12">
+							<div class="wsmenucontainer clearfix">
+								<div class="overlapblackbg"></div>
+								<div class="wsmobileheader clearfix">
+									<a id="wsnavtoggle" class="animated-arrow"><span></span></a>
+								</div>
+								<!-- Main Menu HTML Code -->
+								<div class="header color-black">
+									<nav class="wsmenu clearfix center">
+										<!-- Desplegables -->
+										<ul
+											class="mobile-sub wsmenu-list nav-items noto-sans fw-medium fs-6 tracking-wide"
+										>
+											<!-- link a home -->
+											<li>
+												<a class="color-black" href="../../index.html">Inicio</a>
+											</li>
+											<!-- Productos: Menú desplegable -->
+											<li>
+												<a
+													class="color-black"
+													href="./products-list-view.html"
+													>Productos&nbsp;
+													<span class="bi bi-chevron-down color-black"></span
+												></a>
+												<div class="megamenu clearfix">
+													<div class="container">
+														<div class="row">
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Dirección</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Headlights & Lighting</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fuel
+																		System & Filters</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Body
+																		Parts & Mirrors</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Interior
+																		Accessories</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Frenos</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Headlights & Lighting</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fuel
+																		System & Filters</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Body
+																		Parts & Mirrors</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Interior
+																		Accessories</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Periféricos</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Engine &
+																		Drivetrain</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Oils &
+																		Lubricants</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Engine
+																		Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Suspension System</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Performance Parts</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Transmisión</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tools &
+																		Garage</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Other
+																		Auto Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fishing
+																		Reel</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Repair
+																		Parts</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Suspensión</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tools &
+																		Garage</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Other
+																		Auto Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fishing
+																		Reel</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Repair
+																		Parts</a
+																	>
+																</li>
+															</ul>
+															<div
+																class="d-none d-lg-flex col-lg-2 justify-content-center"
+															>
+																<img
+																	style="
+																		text-align: center;
+																		width: auto;
+																		height: 250px;
+																	"
+																	src="../../assets/img/lg_distry/Imagen de WhatsApp 2024-07-04 a las 19.07.35_57cc53c3.jpg"
+																	alt=""
+																/>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<!-- Noticias -->
+											<li>
+												<a class="color-black" href="../noticias/news.html"
+													>Noticias&nbsp;
+												</a>
+											</li>
+											<!-- Contacto -->
+											<li>
+												<a class="color-black" href="../contact.html"
+													>Contacto&nbsp;</a
+												>
+											</li>
+											<!-- Sobre nosotros -->
+											<li>
+												<a class="color-black" href="#"
+													>Nosotros&nbsp;
+													<span class="bi bi-chevron-down color-black"></span
+												></a>
+												<div class="megamenu clearfix halfmenu">
+													<div class="container">
+														<div class="row">
+															<ul class="col-12 col-xl-6 link-list">
+																<li>
+																	<a href="../about.html"
+																		><i class="bi bi-chevron-right"></i>Quiénes
+																		somos</a
+																	>
+																</li>
+																<li>
+																	<a href="../faq.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Preguntas frecuentes</a
+																	>
+																</li>
+																<li>
+																	<a href="../partners.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Proveedores</a
+																	>
+																</li>
+																<li>
+																	<a href="../privacy.html"
+																		><i class="bi bi-chevron-right"></i>Politica
+																		de privacidad</a
+																	>
+																</li>
+																<li>
+																	<a href="#"
+																		><i class="bi bi-chevron-right"></i>Trabajá
+																		con nosotros</a
+																	>
+																</li>
+																<li>
+																	<a href="../sucursales.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Sucursales</a
+																	>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</nav>
+									<!--Menu HTML Code-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- shop section -->
+		<div class="my-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="card mb-4 bg-light border-0 breadcrumb-content">
+							<!-- product title section -->
+							<div
+								class="theme-border-radius theme-box-shadow card-body p-3 theme-bg-white"
+							>
+								<!-- migas de pan -->
+								<ul>
+									<li><a href="../../index.html">Home</a></li>
+									<li><a href="#">Manufacturing Equipment</a></li>
+									<li><a href="#">Braking System</a></li>
+									<li>Brake Drum</li>
+								</ul>
+								<!-- Título de categoria -->
+								<h2 class="mt-2 fs-6 fw-bold">
+									Nombre categoría
+									<span class="font-extra-small fw-normal ms-2"
+										>(Mostrando 1 – 40 productos de 52)</span
+									>
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- filtros disponibles - columna izquierda -->
+					<aside class="col-lg-3 col-md-4 mb-6 mb-md-0">
+						<div
+							class="offcanvas offcanvas-start offcanvas-collapse"
+							tabindex="-1"
+							id="offcanvasCategory"
+							aria-labelledby="offcanvasCategoryLabel"
+						>
+							<div class="offcanvas-header d-lg-none">
+								<h5 class="offcanvas-title" id="offcanvasCategoryLabel">
+									Filtros
+								</h5>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body p-3">
+								<!-- Filtros: Quitar filtros e info de filtros aplicados -->
+								<div class="mb-3 border-bottom pb-3">
+									<div
+										class="d-flex justify-content-between align-items-center"
+									>
+										<span class="fs-4 fw-bold">Filtros</span>
+										<span class="font-extra-small theme-text-primary"
+											>Quitar filtros</span
+										>
+									</div>
+									<!-- Información de filtros aplicados, miga de pan -->
+									<div class="mt-2">
+										<span
+											class="badge theme-bg-accent-two theme-text-accent-one"
+											>Vehículo</span
+										>
+										<span
+											class="badge theme-bg-accent-two theme-text-accent-one"
+											>Marca</span
+										>
+									</div>
+								</div>
+								<!-- Filtros: Seleccion -->
+								<div class="mb-5">
+									<!-- title -->
+									<h5 class="mb-3 fs-6">Categorías</h5>
+									<!-- Navegación por categorías-->
+									<ul class="nav nav-category" id="categoryCollapseMenu">
+										<li
+											class="nav-item border-bottom w-100 collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#categoryFlushOne"
+											aria-expanded="false"
+											aria-controls="categoryFlushOne"
+										>
+											<a href="#" class="nav-link"
+												><i class="bi bi-chevron-right"></i>&nbsp;Categoría 1</a
+											>
+											<!-- accordion collapse -->
+											<div
+												id="categoryFlushOne"
+												class="accordion-collapse collapse"
+												data-bs-parent="#categoryCollapseMenu"
+											>
+												<div>
+													<!-- nav -->
+													<ul class="nav flex-column ms-3">
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<!-- repetable -->
+										<li
+											class="nav-item border-bottom w-100 collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseTwo"
+											aria-expanded="false"
+											aria-controls="flush-collapseTwo"
+										>
+											<a href="#" class="nav-link">
+												<i class="bi bi-chevron-right"></i>&nbsp;Categoría 2
+											</a>
+											<!-- collapse -->
+											<div
+												id="flush-collapseTwo"
+												class="accordion-collapse collapse"
+												data-bs-parent="#categoryCollapseMenu"
+											>
+												<div>
+													<!-- nav -->
+													<ul class="nav flex-column ms-3">
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<!-- repetable -->
+										<li
+											class="nav-item border-bottom w-100 collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseThree"
+											aria-expanded="false"
+											aria-controls="flush-collapseThree"
+										>
+											<a href="#" class="nav-link">
+												<i class="bi bi-chevron-right"></i>&nbsp;Categoría 3
+											</a>
+											<!-- collapse -->
+											<div
+												id="flush-collapseThree"
+												class="accordion-collapse collapse"
+												data-bs-parent="#categoryCollapseMenu"
+											>
+												<div>
+													<!-- nav -->
+													<ul class="nav flex-column ms-3">
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<!-- repetable -->
+										<li
+											class="nav-item border-bottom w-100 collapsed"
+											data-bs-toggle="collapse"
+											data-bs-target="#flush-collapseFour"
+											aria-expanded="false"
+											aria-controls="flush-collapseFour"
+										>
+											<a href="#" class="nav-link">
+												<i class="bi bi-chevron-right"></i>&nbsp;Categoría 4
+											</a>
+											<!-- collapse -->
+											<div
+												id="flush-collapseFour"
+												class="accordion-collapse collapse"
+												data-bs-parent="#categoryCollapseMenu"
+											>
+												<div>
+													<!-- nav -->
+													<ul class="nav flex-column ms-3">
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+														<li class="nav-item">
+															<a href="#!" class="nav-link">SubCat</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<!-- repetable -->
+									</ul>
+								</div>
+								<!-- Filtros: Tipos de vehículos -->
+								<div class="mb-5">
+									<!-- Selección por tipo de vehiculo - checkbox -->
+									<h5 class="mb-3 fs-6">Filtrar por vehículo</h5>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="eGrocery"
+											checked=""
+										/>
+										<label class="form-check-label" for="eGrocery">Todos</label>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="DealShare"
+										/>
+										<label class="form-check-label" for="DealShare"
+											>Autos</label
+										>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Dmart"
+										/>
+										<label class="form-check-label" for="Dmart">Camiones</label>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Blinkit"
+										/>
+										<label class="form-check-label" for="Blinkit"
+											>Colectivos</label
+										>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="wheelers"
+										/>
+										<label class="form-check-label" for="Blinkit">Motos</label>
+									</div>
+								</div>
+								<!-- Filtros: por rango de precios -->
+								<div class="mb-5">
+									<!-- price -->
+									<h5 class="mb-3 fs-6">Filtrar por Precio:</h5>
+									<div>
+										<!-- range -->
+										<div class="slider-area border-dark">
+											<div class="slider-area-wrapper">
+												<div id="priceRange" class="slider"></div>
+											</div>
+										</div>
+										<div class="mt-3">
+											<small class="text-muted">Precio:</small>
+											<span id="priceRange-value" class="small"></span>
+										</div>
+									</div>
+								</div>
+								<!-- Filtros: por marca -->
+								<div class="mb-5">
+									<h5 class="mb-3 fs-6">Filtrar por Marca</h5>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Audi"
+											checked=""
+										/>
+										<label class="form-check-label" for="eGrocery">Audi</label>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="BMW"
+										/>
+										<label class="form-check-label" for="DealShare">BMW</label>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Tata"
+										/>
+										<label class="form-check-label" for="Dmart">Tata</label>
+									</div>
+									<!-- form check -->
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Isuzu"
+										/>
+										<label class="form-check-label" for="Blinkit">Isuzu</label>
+									</div>
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Mahindra"
+										/>
+										<label class="form-check-label" for="Blinkit"
+											>Mahindra</label
+										>
+									</div>
+									<div class="form-check mb-2">
+										<!-- input -->
+										<input
+											class="form-check-input"
+											type="checkbox"
+											value=""
+											id="Maruti"
+										/>
+										<label class="form-check-label" for="Blinkit">Maruti</label>
+									</div>
+								</div>
+
+								<div class="mb-0 position-relative">
+									<!-- Banner Content -->
+									<div class="position-absolute p-2">
+										<h3 class="mb-0 text-dark">Ofertas</h3>
+										<p class="text-dark">Hasta 25% Off</p>
+										<a href="#" class="btn btn-dark"
+											>Comprar ya<i class="bi bi-arrow-right ms-1"></i
+										></a>
+									</div>
+									<img
+										src="../../assets/img/noticias/NOT_sport.webp"
+										alt="shop-banner"
+										class="img-fluid rounded-3"
+									/>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<!-- Ordenamiento y productos - columna derecha -->
+					<div class="col-lg-9 col-md-12 list-view">
+						<!-- filtros: ordenamiento. sort & filter button -->
+						<div class="d-lg-flex justify-content-between align-items-center align-items-center p-3 theme-box-shadow theme-border-radius">
+							<div class="d-flex flex-column flex-sm-row mb-3 mb-lg-0">
+								<p class="mb-0 theme-text-secondary fw-bold">Ordenar por:</p>
+								<span class="ms-0 ms-md-4">&nbsp;Precio descendente&nbsp;</span>
+								<span class="ms-0 ms-md-4">&nbsp;Precio ascendente&nbsp;</span>
+								<span class="ms-0 ms-md-4">&nbsp;a - z&nbsp;</span>
+								<span class="ms-0 ms-md-4">&nbsp;z - a&nbsp;</span>
+							</div>
+							<!-- icon -->
+							<div class="d-md-flex justify-content-between align-items-center">
+								<div class="d-flex align-items-center justify-content-between">
+									<div class="d-lg-none">
+										<a
+											class="btn btn-outline-dark text-muted"
+											data-bs-toggle="offcanvas"
+											href="#offcanvasCategory"
+											role="button"
+											aria-controls="offcanvasCategory"
+											><svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="14"
+												height="14"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="feather feather-filter me-2"
+											>
+												<polygon
+													points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+												></polygon>
+											</svg>
+											Filtros</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Listado de productos -->
+						<div class="row mt-4">
+							<div class="col-12 mb-3 deal-zone">
+								<!-- CARD PRODUCTO parts product / repetable -->
+								<div class="theme-border-radius theme-box-shadow px-2 py-3 deal-card m-0">
+									<div class="row justify-content-around">
+										<div class="col-12 col-md-3 col-lg-3 align-self-center">
+											<div class="m-auto product-quick-view border-1">
+												<img
+													src="../../assets/img/productos/campana-de-freno-asia-hi-topic-94-eq-rpta00280.jpg"
+													class="img-fluid mx-auto d-block"
+													alt="foto de producto"
+												/>
+												<!-- hover buttons compare, quick view-->
+												<div class="view rounded-2">
+													<span class="d-flex flex-row gap-2">
+														<a
+															href="#"
+															class="quick-btn"
+															data-bs-toggle="modal"
+															data-bs-target="#quickViewModal"
+															><i
+																class="bi bi-eye"
+																data-bs-toggle="tooltip"
+																data-bs-placement="top"
+																data-bs-original-title="Vista rápida"
+															></i
+														></a>
+														<a
+															href="#"
+															class="quick-btn"
+															data-bs-toggle="tooltip"
+															data-bs-placement="top"
+															aria-label="Compare"
+															data-bs-original-title="Comparar"
+															><i class="bi bi-arrow-left-right"></i
+														></a>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="p-0 col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-between">
+											<!-- Nombre del producto -->
+											<p class="px-2 col-12 mb-4 text">
+												<a href="javascript:void(0)">Nombre del producto</a>
+											</p>
+											<!-- Precios del producto-->
+											<div class="d-flex gap-4 align-items-end">
+												<div class="detail-price h-75 w-25 text-center">
+													<p class="p-0 m-0 noto-sans fw-medium">Precio de lista</p>
+													<p class="noto-sans rounded-5 theme-bg-accent-two">$1.500.000</p>
+												</div>
+												<div class="detail-price h-75 w-25 text-center">
+													<p class="p-0 m-0 noto-sans fw-medium">Precio final</p>
+													<p class="noto-sans rounded-5 theme-bg-accent-two">$1.500.000</p>
+												</div>
+												<div class="detail-price h-75 w-25 text-center">
+													<p class="p-0 m-0 noto-sans fw-medium">Precio sugerido</p>
+													<p class="noto-sans rounded-5 theme-bg-accent-two">$1.500.000</p>
+												</div>
+												
+											</div>
+										</div>
+										<!-- contador, stock, btn agregar al pedido -->
+										<div class="col-12 col-md-3 col-lg-3 align-self-center">
+											<div class="col-12 d-flex flex-col flex-wrap justify-content-center gap-2">
+												<!-- stock y contador cantidades -->
+												<div class="col-12 d-flex justify-content-evenly mb-1">
+													<div class="col-7 p-1 py-2 d-flex gap-1 rounded-2 flex-column justify-content-around theme-bg-accent-five">
+														<input
+															class="col-10 align-self-center fs-4 border-0 rounded-1 text-center"
+															readonly
+															value="0"
+														/>
+														<div
+															class="gap-3 d-flex justify-content-evenly m-0"
+														>
+															<i class="icon icon--minus-icon"></i>
+															<i class="icon icon--plus-icon"></i>
+														</div>
+													</div>
+													<div
+														class="col-4 d-flex justify-content-center rounded-2 theme-bg-accent-five"
+													>
+														<div class="align-self-center text-center">
+															<p class="bebas-neue m-0">STOCK</p>
+															<i class="icon icon--full-stock m-0"></i>
+														</div>
+													</div>
+												</div>
+												<!-- btn agregar al Pedido -->
+												<div class="row col-12 add-cart custom-button">
+													<button	class="btn-add-to-cart button-effect w-100 noto-sans fw-bold tracking-wider" type="submit"	tabindex="0">
+														Agregar al Pedido
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Paginación pagination section -->
+						<div class="row mt-3 mt-lg-0">
+							<div class="col">
+								<!-- nav -->
+								<div
+									class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 theme-box-shadow theme-border-radius"
+								>
+									<p
+										class="font-extra-small mb-3 mb-lg-0 theme-text-accent-one"
+									>
+										Página 1 de 3
+									</p>
+									<nav>
+										<ul class="pagination justify-content-center">
+											<!-- uno atrás -->
+											<li class="page-item disabled">
+												<a
+													class="page-link mx-1 rounded-3"
+													href="#"
+													aria-label="Previous"
+												>
+													<i class="bi bi-arrow-left"></i>
+												</a>
+											</li>
+											<!-- btn 1 -->
+											<li class="page-item">
+												<a class="page-link mx-1 rounded-3 active" href="#"
+													>1</a
+												>
+											</li>
+											<!-- btn 2 -->
+											<li class="page-item">
+												<a class="page-link mx-1 rounded-3 text-body" href="#"
+													>2</a
+												>
+											</li>
+											<!-- más -->
+											<li class="page-item">
+												<a class="page-link mx-1 rounded-3 text-body" href="#"
+													>...</a
+												>
+											</li>
+											<!-- btn 12 - max -->
+											<li class="page-item">
+												<a class="page-link mx-1 rounded-3 text-body" href="#"
+													>12</a
+												>
+											</li>
+											<!-- uno adelante -->
+											<li class="page-item">
+												<a
+													class="page-link mx-1 rounded-3 text-body"
+													href="#"
+													aria-label="Next"
+												>
+													<i class="bi bi-arrow-right"></i>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Part -->
+		<footer class="footer pt-4">
+			<!-- Contacto  -->
+			<div class="container">
+				<div class="row">
+					<!-- Información de contacto -->
+					<div class="col-12 col-md-6 col-lg-4">
+						<h3 class="fs-5 mb-4 mt-0 mt-lg-5 text-uppercase futura-std-xb">
+							Contactanos en
+						</h3>
+						<div class="d-flex">
+							<p class="mb-0"><i class="bi bi-geo-alt-fill fs-5 me-3"></i></p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Dirección</span>
+								<span class="d-flex">Leguizamón Onésimo 459, Neuquén, Neuquén</span>
+								<span class="d-flex">Río Negro 519, Neuquén, Neuquén</span>
+								<span class="d-flex">Miguel Muñoz 67, Cipolletti, Rio Negro</span>
+							</p>
+						</div>
+						<div class="d-flex mt-3">
+							<p class="mb-0"><i class="bi bi-telephone-fill fs-5 me-3"></i></p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Líneas de contacto:</span>
+								<span class="d-flex">
+									Sucursal Leguizamón: (0299) 448-1628 <br />
+									Sucursal Río Negro: (0299) 447-0670 <br />
+									Sucursal Cipolletti: (0299) 477-8352 <br />
+									Horarios de atención: <br />
+									Lunes a Viernes de 09:00 a 18:00
+									<br>
+									Sábados de 09:00 a 12:00
+								</span>
+							</p>
+						</div>
+						<div class="d-flex mt-3">
+							<p class="mb-0">
+								<i class="bi bi-envelope-open-fill fs-5 me-3"></i>
+							</p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Envianos un correo a:</span>
+								<span class="d-flex">info@distryser.com.ar</span>
+							</p>
+						</div>
+					</div>
+					<!-- Enlaces útiles -->
+					<div class="col-12 col-md-6 col-lg-5">
+						<div class="row">
+							<div class="col-12">
+								<h3 class="fs-5 mb-4 mt-5 text-uppercase futura-std-xb">
+									Información
+								</h3>
+							</div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<ul class="footer-link">
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)"
+													>Información sobre Envíos</a
+												>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Política de privacidad</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Preguntas Frecuentes</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-6">
+										<ul class="footer-link">
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Mi cuenta</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Historial de compra</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Noticias</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Partners</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 custom">
+						<div class="mt-5 mt-md-0 mt-lg-5">
+							<a href="../../index.html">
+								<img
+									src="../../assets/img/lg_distry/distryser_marca__footer.webp"
+									class="img-fluid"
+									alt="Brand light"
+								/>
+							</a>
+						</div>
+						<p class="mt-4 font-small lh-base">
+							Desde 1995, hemos destacado por nuestra dedicación y excelencia en
+							el servicio. Con un catálogo de más de 15,000 productos, nos
+							centramos en comprender las necesidades de nuestros clientes y
+							establecer relaciones sólidas con partners de confianza. Nuestro
+							equipo, altamente comprometido y profesional, asegura una
+							experiencia positiva y personalizada, fortaleciendo la relación
+							con cada cliente.
+						</p>
+						<h3 class="mt-4 h5 mb-4 futura-std-xb">Seguinos en:</h3>
+						<div class="d-flex social mt-3">
+							<a href="javascript:void(0)" class="fs-4 pe-3"
+								><i class="bi bi-facebook"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-twitter"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-linkedin"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-instagram"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="row my-2">
+					<ul
+						class="d-flex flex-row flex-wrap justify-content-center align-items-center"
+					></ul>
+				</div>
+			</div>
+			<!-- Info marca y RRSS -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row py-2"></div>
+				</div>
+			</div>
+			<a
+				href="#wrapper"
+				data-type="section-switch"
+				class="scrollup theme-border-radius"
+				><i class="bi bi-chevron-double-up"></i
+			></a>
+		</footer>
+		<!-- quick view modal / VISTA RAPIDA MODAL -->
+		<div
+			class="modal fade"
+			id="quickViewModal"
+			tabindex="-1"
+			aria-labelledby="quickViewModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body p-5 pb-0">
+						<div
+							class="position-absolute top-0 end-0 me-3 mt-3"
+							id="quickViewModalLabel"
+						>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<!-- product gallery -->
+								<div class="product-gallery">
+									<div class="slider slider-for">
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product01.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product01.png"
+												alt="Auto"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product02.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product02.png"
+												alt="Auto"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product03.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product03.png"
+												alt="Auto"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product04.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product04.png"
+												alt="Auto"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product05.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product05.png"
+												alt="Auto"
+											/>
+										</div>
+									</div>
+									<div class="slider slider-nav gallery-thumb">
+										<div>
+											<img
+												src="../../assets/images/product/parts-product01.png"
+												alt="Auto"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product02.png"
+												alt="Auto"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product03.png"
+												alt="Auto"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product04.png"
+												alt="Auto"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product05.png"
+												alt="Auto"
+											/>
+										</div>
+									</div>
+									<!-- products thumb -->
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="ps-lg-8 mt-6 mt-lg-0">
+									<a href="#!" class="mb-3 d-block">Categoría</a>
+									<h2 class="mb-1 h4">Nombre producto</h2>
+									<hr class="my-6" />
+									<!-- Precios del producto-->
+									<div class="row justify-content-center p-0 m-0 mt-2">
+										<div class="d-flex justify-content-around gap-1 align-content-center">
+											<div class="text-center col-4">
+												<p class="detail-price mb-1 noto-sans fw-medium">Precio de lista</p>
+												<p class="theme-bg-accent-five rounded-5 noto-sans text-center">$1.500.000</p>
+											</div>
+											<div class="text-center col-4">
+												<p class="detail-price mb-1 noto-sans fw-medium">Precio final</p>
+												<p class="theme-bg-accent-five rounded-5 noto-sans text-center">$1.500.000</p>
+											</div>
+											<div class="text-center col-4">
+												<p class="detail-price mb-1 noto-sans fw-medium">Precio sugerido</p>
+												<p class="theme-bg-accent-five rounded-5 noto-sans text-center">$1.500.000</p>
+											</div>
+											
+										</div>
+									</div>
+									<hr class="my-6" />
+									
+									<div
+										class="mt-3 row justify-content-start g-2 align-items-center"
+									>
+										<div class="col-12 col-md-3">
+											<div class="input-group input-spinner">
+												<span class="button-minus btn btn-sm">-</span>
+												<input
+													type="text"
+													value="1"
+													class="quantity-field form-control-sm form-input"
+												/>
+												<span class="button-plus btn btn-sm">+</span>
+											</div>
+										</div>
+										<div class="col-12 col-md-5 custom-button">
+											<!-- button -->
+											<!-- btn -->
+											<button
+												type="button"
+												class="custom-btn-primary font-small button-effect justify-content-center align-items-center d-flex"
+											>
+												Agregar al pedido
+											</button>
+										</div>
+									</div>
+									<hr class="my-6" />
+									<div>
+										<table class="table table-borderless">
+											<tbody>
+												<tr>
+													<td>Código de producto:</td>
+													<td>{código}</td>
+												</tr>
+												<tr>
+													<td>Disponibilidad:</td>
+													<td>
+														<span class="badge text-bg-success">{Hay Stock}</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Categoría:</td>
+													<td>{nombre categoría}</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer text-center justify-content-center">
+						<p>Ver detalle</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Dependencies: Bootstrap Bundle with Popper / jQuery first -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+		<script src="../../assets/js/slick.min.js"></script>
+		<script src="../../assets/js/slick-animation.min.js"></script>
+		<script src="../../assets/js/wow.min.js"></script>
+		<script src="../../assets/js/nouislider.min.js"></script>
+		<script src="../../assets/js/wNumb.min.js"></script>
+		<!-- theme main js -->
+		<script src="../../assets/js/main.js"></script>
+		<!-- page script -->
+		<script>
+			// price range slider
+			var t = document.getElementById("priceRange");
+			noUiSlider.create(t, {
+				connect: !0,
+				behaviour: "tap",
+				start: [49, 199],
+				range: {
+					min: [6],
+					max: [300],
+				},
+				pips: {
+					format: wNumb({
+						decimals: 1,
+						thousand: ".",
+						prefix: "$",
+					}),
+				},
+			});
+			var e = document.getElementById("priceRange-value");
+			t.noUiSlider.on("update", function (t) {
+				e.innerHTML = t.join(" - ");
+			});
+		</script>
+	</body>
+</html>

@@ -32,12 +32,12 @@ $(function () {
   });
 });
 
-// menu slider
-var myCarousel = document.getElementById('myCarousel')
+// // menu slider
+// var myCarousel = document.getElementById('myCarousel')
 
-myCarousel.addEventListener('slide.bs.carousel', function () {
-  // do something...
-})
+// myCarousel.addEventListener('slide.bs.carousel', function () {
+//   // do something...
+// })
 
 // plus minus button
 $(document).ready(function () {

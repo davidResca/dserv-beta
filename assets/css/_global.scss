@@ -5,7 +5,9 @@ html {
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
 }
 
 .font-small {
@@ -37,6 +39,10 @@ body {
     background-color: $theme-accent-two;
 }
 
+.theme-bg-accent-five {
+    background-color: $theme-accent-five;
+}
+
 .theme-bg-white {
     background-color: $theme-color-white;
 }
@@ -65,7 +71,6 @@ body {
 .theme-text-accent-three {
     color: $theme-accent-three;
 }
-
 
 /*-- shadow css --*/
 .theme-box-shadow {
@@ -103,12 +108,14 @@ body {
 /*-- primary button effect css --*/
 .custom-button {
     .button-effect {
+        
         transition: all 0.5s;
         position: relative;
         z-index: 2;
         overflow: hidden;
 
         &::before {
+            border-radius: .6rem;
             transition: .5s all ease;
             position: absolute;
             top: 0;

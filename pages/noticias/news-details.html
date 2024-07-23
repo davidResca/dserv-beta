@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="ThemesLay" />
+		<!-- Favicon icon -->
+		<link	rel="icon"	type="image/png"	sizes="50x50"	href="../../assets/img/favicon/favicon.webp"/>
+		<!-- theme CSS -->
+		<link href="../../assets/css/main.css" rel="stylesheet" />
+		<!-- page title -->
+		<title>
+			Distryser | Noticia 
+		</title>
+	</head>
+	<body>
+		<!-- preloader section -->
+		<!-- <div class="page-loader">
+    <div class="spinner"></div>
+  </div> -->
+		<!-- page wrapper section -->
+		<div id="wrapper"></div>
+		<!-- Modal: carrito  -->
+		<div
+			class="offcanvas offcanvas-end cart-menu"
+			tabindex="-1"
+			id="offcanvasRight"
+			aria-labelledby="offcanvasRightLabel"
+		>
+			<!-- cart header -->
+			<div class="offcanvas-header border-bottom">
+				<!-- cart title -->
+				<div class="text-start">
+					<h5 id="offcanvasRightLabel" class="mb-0 fs-5">Carrito de compras</h5>
+				</div>
+				<!-- cart close btn -->
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<!-- carrito: contenido -->
+				<div class="mb-2">
+					<!-- Carrito: lista de productos -->
+					<ul class="list-group list-group-flush">
+						<!-- Item Carrito -->
+						<li class="list-group-item py-3 ps-0 border-top">
+							<div class="row align-items-center">
+								<!-- producto: imagen -->
+								<div class="col-3 col-md-2">
+									<img
+										src="../../assets/images/product/baring.jpg"
+										alt="Parts"
+										class="img-fluid"
+									/>
+								</div>
+								<!-- producto: contenido -->
+								<div class="col-4 col-md-6 col-lg-5">
+									<!-- producto: nombre -->
+									<a href="javascript:void(0)" class="text-inherit">
+										<p class="mb-0 font-small">Nombre Producto</p>
+									</a>
+									<span
+										><small class="text-muted font-extra-small"
+											>Cantidad:</small
+										></span
+									>
+									<!-- boton quitar producto -->
+									<div class="mt-2 small lh-1">
+										<a
+											href="javascript:void(0)"
+											class="text-decoration-none text-inherit"
+										>
+											<span class="me-1 align-middle"
+												><i class="bi bi-trash"></i
+											></span>
+											<span class="text-muted font-extra-small"
+												>Quitar del carrito</span
+											>
+										</a>
+									</div>
+								</div>
+								<!-- botones sumar, restar cantidad de producto -->
+								<div class="col-3 col-md-3 col-lg-3 px-0">
+									<div class="input-group input-spinner">
+										<span class="button-minus btn btn-sm">-</span>
+										<input
+											type="text"
+											value="1"
+											class="quantity-field form-control-sm form-input"
+										/>
+										<span class="button-plus btn btn-sm">+</span>
+									</div>
+								</div>
+								<!-- producto: precio -->
+								<div class="col-2 text-lg-end text-start text-md-end col-md-2">
+									<span class="fw-bold">$5.00</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- botones seguir comprando, actualizar carrito -->
+					<div class="d-flex justify-content-between mt-4 custom-button">
+						<a
+							href="#"
+							class="d-flex align-items-center custom-btn-primary font-small button-effect px-2"
+							>Seguir comprando</a
+						>
+						<a
+							href="#"
+							class="theme-border custom-btn-secondary font-small button-effect px-2"
+							>Actualizar carrito</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+		<header>
+			<!-- strip principal -->
+			<div class="topheader theme-bg-secondary py-2">
+				<div class="container">
+					<div class="row align-items-start">
+						<!-- Logo Marca -->
+						<div class="col-12 col-lg-3 align-self-center">
+							<a
+								class="navbar-brand d-flex justify-content-center justify-content-lg-start"
+								href="../../index.html"
+							>
+								<img
+									src="../../assets/images/brand/distryser_brand_transparente.png"
+									class="img-fluid"
+									alt="Brand Logo"
+									title="Brand Logo"
+								/>
+							</a>
+						</div>
+						<!-- Barra de busqueda -->
+						<div class="col-12 col-lg-6 mt-3 mt-lg-0 align-self-center">
+							<div class="input-group search-input">
+								<input
+									type="text"
+									class="form-control noto-sans"
+									placeholder="&nbsp;Buscar productos"
+									aria-label="Recipient's username"
+									aria-describedby="button-addon2"
+								/>
+								<button
+									class="btn btn-outline-secondary"
+									type="button"
+									id="button-addon2"
+								>
+									<i class="bi bi-search"></i>
+								</button>
+							</div>
+						</div>
+						<!-- Botones Main Header -->
+						<div class="col-12 col-lg-3 align-self-center mt-3 mt-lg-0">
+							<div
+								class="d-flex primary-action justify-content-center justify-content-evenly align-items-center"
+							>
+								<a href="../tienda/products-list-view.html" class="ms-0">
+									<i class="bi bi-journal-richtext fs-2"></i>
+									<span class="d-flex noto-sans">Catálogo</span>
+								</a>
+								<div class="dropdown ms-0">
+									<a
+										href="#"
+										class="d-flex flex-column align-items-center"
+										id="cuentaDropdown"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<i class="bi bi-person-square fs-2 text-danger"></i>
+										<span class="d-flex align-items-center">
+											Cuenta
+											<i
+												class="bi bi-caret-down-fill ms-1 text-danger pt-1"
+											></i>
+										</span>
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="cuentaDropdown">
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="../cuentaUsuario/my-account.html"
+												>Mi cuenta</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="../cuentaUsuario/signin.html"
+												>Ingresar</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item text-start"
+												href="../cuentaUsuario/signup.html"
+												>Registrarse</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item text-start" href="">Salir</a>
+										</li>
+									</ul>
+								</div>
+								<a
+									href="javascript:void(0)"
+									class="position-relative"
+									data-bs-toggle="offcanvas"
+									data-bs-target="#offcanvasRight"
+									aria-controls="offcanvasRight"
+								>
+									<i class="bi bi-cart fs-2"></i>
+									<span class="d-flex noto-sans">Pedido</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Barra de Navegacion -->
+			<div class="bg-yellow-116 main-nav theme-box-shadow">
+				<div class="container">
+					<div class="row position-relative g-0">
+						<div class="col-12">
+							<div class="wsmenucontainer clearfix">
+								<div class="overlapblackbg"></div>
+								<div class="wsmobileheader clearfix">
+									<a id="wsnavtoggle" class="animated-arrow"><span></span></a>
+								</div>
+								<!-- Main Menu HTML Code -->
+								<div class="header color-black">
+									<nav class="wsmenu clearfix center">
+										<!-- Desplegables -->
+										<ul
+											class="mobile-sub wsmenu-list nav-items noto-sans fw-medium fs-6 tracking-wide"
+										>
+											<!-- link a home -->
+											<li>
+												<a class="color-black" href="../../index.html">Inicio</a>
+											</li>
+											<!-- Productos: Menú desplegable -->
+											<li>
+												<a
+													class="color-black"
+													href="../tienda/products-list-view.html"
+													>Productos&nbsp;
+													<span class="bi bi-chevron-down color-black"></span
+												></a>
+												<div class="megamenu clearfix">
+													<div class="container">
+														<div class="row">
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Dirección</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Headlights & Lighting</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fuel
+																		System & Filters</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Body
+																		Parts & Mirrors</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Interior
+																		Accessories</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Frenos</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Headlights & Lighting</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fuel
+																		System & Filters</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Body
+																		Parts & Mirrors</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Interior
+																		Accessories</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Periféricos</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Engine &
+																		Drivetrain</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Oils &
+																		Lubricants</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Engine
+																		Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Suspension System</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i
+																		>Performance Parts</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Transmisión</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tools &
+																		Garage</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Other
+																		Auto Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fishing
+																		Reel</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Repair
+																		Parts</a
+																	>
+																</li>
+															</ul>
+															<ul class="col-lg-2 col-md-3 col-xs-12 link-list">
+																<li class="title">Suspensión</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tools &
+																		Garage</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Other
+																		Auto Parts</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Tires &
+																		Wheels</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Fishing
+																		Reel</a
+																	>
+																</li>
+																<li>
+																	<a href="javascript:void(0)"
+																		><i class="bi bi-chevron-right"></i>Repair
+																		Parts</a
+																	>
+																</li>
+															</ul>
+															<div
+																class="d-none d-lg-flex col-lg-2 justify-content-center"
+															>
+																<img
+																	style="
+																		text-align: center;
+																		width: auto;
+																		height: 250px;
+																	"
+																	src="../../assets/img/lg_distry/Imagen de WhatsApp 2024-07-04 a las 19.07.35_57cc53c3.jpg"
+																	alt=""
+																/>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<!-- Noticias -->
+											<li>
+												<a class="color-black" href="./news.html"
+													>Noticias&nbsp;
+												</a>
+											</li>
+											<!-- Contacto -->
+											<li>
+												<a class="color-black" href="../contact.html"
+													>Contacto&nbsp;</a
+												>
+											</li>
+											<!-- Sobre nosotros -->
+											<li>
+												<a class="color-black" href="#"
+													>Nosotros&nbsp;
+													<span class="bi bi-chevron-down color-black"></span
+												></a>
+												<div class="megamenu clearfix halfmenu">
+													<div class="container">
+														<div class="row">
+															<ul class="col-12 col-xl-6 link-list">
+																<li>
+																	<a href="../about.html"
+																		><i class="bi bi-chevron-right"></i>Quiénes
+																		somos</a
+																	>
+																</li>
+																<li>
+																	<a href="../faq.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Preguntas frecuentes</a
+																	>
+																</li>
+																<li>
+																	<a href="../partners.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Proveedores</a
+																	>
+																</li>
+																<li>
+																	<a href="../privacy.html"
+																		><i class="bi bi-chevron-right"></i>Politica
+																		de privacidad</a
+																	>
+																</li>
+																<li>
+																	<a href="#"
+																		><i class="bi bi-chevron-right"></i>Trabajá
+																		con nosotros</a
+																	>
+																</li>
+																<li>
+																	<a href="../sucursales.html"
+																		><i class="bi bi-chevron-right"></i
+																		>Sucursales</a
+																	>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</nav>
+									<!--Menu HTML Code-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Body Part - hero section -->
+		<!-- breadcrumb section -->
+		<div class="breadcrumb-area">
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- col -->
+					<div class="col-12">
+						<!-- breadcrumb -->
+						<div class="page-breadcrumb">
+							<h2 class="heading">News & Articles</h2>
+							<div class="mt-3">
+								<ul class="list">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="news.html">News & Articles</a></li>
+									<li>News & Articles Details</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- content section -->
+		<div class="py-5">
+			<div class="container">
+				<div class="row">
+					<!-- news articles -->
+					<div class="col-12 col-lg-8">
+						<div class="theme-bg-white pb-4 mb-4">
+							<div class="row">
+								<div class="col-12">
+									<div class="mt-2 mt-xxl-0">
+										<span class="d-flex font-small mb-2 theme-text-primary"
+											>May 28, 2022</span
+										>
+										<h3 class="d-flex fw-bold mb-3 fs-6">
+											Automotive news: Trends of the day
+										</h3>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Nam quis tellus eu eros tristique consectetur. Cras
+											bibendum mi nec diam suscipit, eget tempus mi ullamcorper.
+											Class aptent taciti sociosqu ad litora torquent per
+											conubia nostra, per inceptos himenaeos. Donec a placerat
+											erat, sed tempor elit. Maecenas sit amet tortor at neque
+											volutpat laoreet ut sed velit.
+										</p>
+										<figure class="mb-3">
+											<img
+												src="../../assets/images/news/post01.jpg"
+												class="img-fluid w-100"
+												alt="news articles"
+												title="news articles"
+											/>
+										</figure>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Aliquam nec ornare massa. Donec tincidunt urna sed varius
+											eleifend. In sed dui at ex semper interdum. Vestibulum
+											massa libero, sagittis vulputate blandit at, mollis vitae
+											arcu. Nunc tincidunt sem mauris, eget pellentesque turpis
+											tempus vel.
+										</p>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Ut porttitor sem vel sem lacinia, non luctus felis
+											tristique. Integer sed egestas purus. Proin bibendum arcu
+											nunc, sit amet ullamcorper dui rutrum quis. Aliquam sed
+											dolor id nibh ullamcorper gravida. Vivamus egestas felis
+											eget pulvinar condimentum. Suspendisse nisl libero, porta
+											non vestibulum in, pulvinar a ipsum. Pellentesque habitant
+											morbi tristique senectus et netus et malesuada fames ac
+											turpis egestas.
+										</p>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Vestibulum mattis leo at sollicitudin congue. Cras nec
+											sollicitudin ex, sed sagittis sem. Nunc ornare dolor non
+											tellus tincidunt, nec interdum dolor imperdiet.
+											Suspendisse vulputate eleifend mollis. Integer luctus
+											vitae mi quis auctor. Cras laoreet, risus in bibendum
+											pulvinar, sapien neque egestas tellus, nec vehicula erat
+											magna sit amet ex. Ut ultricies augue felis, vel
+											vestibulum leo eleifend id.
+										</p>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											In ut viverra felis, in luctus nunc. Ut at ullamcorper
+											leo, at tristique lectus. Quisque metus ex, pharetra non
+											dui in, facilisis lobortis leo. Cras a maximus velit, non
+											commodo eros. Duis pharetra nisi vitae volutpat posuere.
+											Aliquam feugiat auctor arcu vitae vestibulum. Vivamus
+											volutpat augue vitae blandit eleifend. Donec in ex tellus.
+										</p>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Donec mattis bibendum accumsan. Suspendisse euismod
+											dapibus lorem, quis eleifend neque sodales ut. Fusce
+											fermentum venenatis est in dictum. Aenean vehicula odio ac
+											sagittis posuere. Nam eget commodo nunc. Duis tempor enim
+											non semper bibendum. Proin vehicula nunc eget consequat
+											pretium.
+										</p>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											In in rhoncus lacus. Nulla augue nisl, gravida sit amet
+											sollicitudin vitae, egestas sed erat. Etiam egestas nibh
+											eget erat blandit gravida. Proin viverra turpis eget
+											sapien sodales suscipit. Aliquam tincidunt, urna in
+											accumsan pellentesque, elit ligula mattis leo, non finibus
+											neque nulla posuere nunc.
+										</p>
+										<figure class="mb-3">
+											<img
+												src="../../assets/images/news/post03.jpg"
+												class="img-fluid w-100"
+												alt="news articles"
+												title="news articles"
+											/>
+										</figure>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Vivamus nunc libero, mattis vitae diam eu, commodo congue
+											sem. Aliquam at iaculis tortor, id vulputate nunc. Orci
+											varius natoque penatibus et magnis dis parturient montes,
+											nascetur ridiculus mus. Pellentesque habitant morbi
+											tristique senectus et netus et malesuada fames ac turpis
+											egestas. Nunc in augue viverra, faucibus nisl consequat,
+											molestie felis. Duis et nisl nec odio euismod rhoncus
+											vitae tempus felis.
+										</p>
+										<p class="mb-3 font-small fw-normal theme-text-accent-one">
+											Morbi eget sapien vitae augue placerat ultricies. Maecenas
+											eu quam cursus, dignissim ipsum at, rutrum dui. Duis non
+											quam lacinia, vestibulum ligula sit amet, consectetur
+											nisl. Nulla convallis venenatis elit, sagittis facilisis
+											dolor sodales sit amet. Aliquam erat volutpat.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- repetable -->
+						<div class="row mb-4 mb-lg-0">
+							<div class="col-12">
+								<div class="row g-0 row blog-post-social">
+									<div
+										class="col-md-6 d-flex justify-content-md-start justify-content-center"
+									>
+										<ul class="post-tag-list">
+											<li>TAGS:</li>
+											<li><a href="#">Survey,</a></li>
+											<li><a href="#">Data,</a></li>
+											<li><a href="#">Solar,</a></li>
+											<li><a href="#">Pannel,</a></li>
+											<li><a href="#">Setup</a></li>
+										</ul>
+									</div>
+									<div
+										class="col-md-6 d-flex justify-content-md-end justify-content-center"
+									>
+										<ul class="social-follow-icon">
+											<li>Follow:</li>
+											<li>
+												<a href="#"><i class="bi bi-facebook"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="bi bi-twitter"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="bi bi-instagram"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="bi bi-pinterest"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- comment section -->
+							<div class="col-12">
+								<div class="comment-box">
+									<h3 class="comment-head news-side-title fs-4">03 Comments</h3>
+									<!-- Comment 1 -->
+									<ul class="user-comment-card">
+										<li>
+											<div class="comment-title">
+												<div class="userPic">
+													<img
+														src="../../assets/images/comment/userCommentPic.png"
+														alt="User Pic"
+														title="User Pic"
+													/>
+													<span class="userName">Fatima Taneja</span>
+												</div>
+												<div class="comment-meta">
+													<span>18 Feb 2020 at</span>
+													<span>2:30 pm</span>
+												</div>
+											</div>
+											<div class="comment-content">
+												<div class="comment-body">
+													<p>
+														Duis autem vel eum iriure dolor in hendrerit in
+														vulputate consequat, vel illumUt wisi enim ad minim
+														veniam, quis nostrud exerci.Duis autem vel eum
+														iriure dolor in hendrerit in vulputate consequat,
+														vel illumUt wisi enim ad minim veniam, quis nostrud
+														exerci.
+													</p>
+												</div>
+											</div>
+											<!-- Comment 1 reply -->
+											<ul class="user-comment-card">
+												<li>
+													<div class="comment-title">
+														<div class="userPic">
+															<img
+																src="../../assets/images/comment/user2CommentPic.png"
+																alt="User Pic"
+																title="User Pic"
+															/>
+															<span class="userName">George Roger</span>
+														</div>
+														<div class="comment-meta">
+															<span>18 Feb 2020 at</span>
+															<span>2:30 pm</span>
+														</div>
+													</div>
+													<div class="comment-content">
+														<div class="comment-body">
+															<p>
+																Duis autem vel eum iriure dolor in hendrerit in
+																vulputate consequat, vel illumUt wisi enim ad
+																minim veniam, quis nostrud exerci.Duis autem vel
+																eum iriure dolor in hendrerit in vulputate
+																consequat, vel illumUt wisi enim ad minim
+																veniam, quis nostrud exerci.
+															</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<!-- Comment 2 -->
+									<ul class="user-comment-card">
+										<li>
+											<div class="comment-title">
+												<div class="userPic">
+													<img
+														src="../../assets/images/comment/userCommentPic.png"
+														alt="User Pic"
+														title="User Pic"
+													/>
+													<span class="userName">Fatima Taneja</span>
+												</div>
+												<div class="comment-meta">
+													<span>18 Feb 2020 at</span>
+													<span>2:30 pm</span>
+												</div>
+											</div>
+											<div class="comment-content">
+												<div class="comment-body">
+													<p>
+														Duis autem vel eum iriure dolor in hendrerit in
+														vulputate consequat, vel illumUt wisi enim ad minim
+														veniam, quis nostrud exerci.Duis autem vel eum
+														iriure dolor in hendrerit in vulputate consequat,
+														vel illumUt wisi enim ad minim veniam, quis nostrud
+														exerci.
+													</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<!-- Reply comment form -->
+									<div class="row p-4">
+										<h4 class="news-side-title fs-4">Add a Comment</h4>
+										<form class="col-12 comment-form">
+											<div class="row">
+												<div class="col-12">
+													<div class="mb-3 form-group">
+														<label class="mb-2 fw-bold font-small"
+															>Comment</label
+														>
+														<textarea
+															class="form-control"
+															id="Textarea1"
+															rows="3"
+															placeholder="Enter your Comment"
+														></textarea>
+													</div>
+												</div>
+												<div class="col-12 col-md-6">
+													<div class="mb-3">
+														<label
+															class="mb-2 fw-bold font-small"
+															for="floatingInput1"
+															>Your Name</label
+														>
+														<input
+															type="email"
+															class="form-control"
+															id="floatingInput1"
+															placeholder="Your Name"
+														/>
+													</div>
+												</div>
+												<div class="col-12 col-md-6">
+													<div class="mb-3">
+														<label
+															class="mb-2 fw-bold font-small"
+															for="floatingInput2"
+															>Your Email</label
+														>
+														<input
+															type="email"
+															class="form-control"
+															id="floatingInput2"
+															placeholder="Enter Yourn Email"
+														/>
+													</div>
+												</div>
+											</div>
+											<div class="mt-3 custom-button">
+												<button
+													type="submit"
+													class="custom-btn-primary font-small button-effect px-4"
+												>
+													Add Comment
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- news sidebar -->
+					<div class="col-12 col-lg-4">
+						<div
+							class="theme-box-shadow theme-border-radius px-4 py-4 theme-bg-white"
+						>
+							<div class="row g-0 mb-5">
+								<div class="col-12">
+									<span class="d-flex fw-bold news-side-title"
+										>SUVs that will debut at 2020 Auto Expo</span
+									>
+									<div class="overflow-hidden">
+										<figure class="mb-0 img-effect">
+											<img
+												src="../../assets/images/news/side-banner01.jpg"
+												class="img-fluid"
+												alt="side-banner"
+												title="side-banner"
+											/>
+										</figure>
+									</div>
+								</div>
+							</div>
+							<!-- repetable section -->
+							<div class="row g-0 mb-5">
+								<div class="col-12">
+									<span class="d-flex fw-bold news-side-title"
+										>Buy Our Best Pats</span
+									>
+									<div class="mb-0 position-relative">
+										<!-- Banner Content -->
+										<div class="position-absolute p-5">
+											<h3 class="mb-5 theme-text-white">Auto Body PArts</h3>
+											<p class="mb-3 theme-text-white">Mega Sale</p>
+											<a href="#" class="btn btn-dark"
+												>Buy Now<i class="bi bi-arrow-right ms-1"></i
+											></a>
+										</div>
+										<img
+											src="../../assets/images/news/side-banner02.jpg"
+											alt=""
+											class="img-fluid"
+										/>
+									</div>
+								</div>
+							</div>
+							<!-- repetable section -->
+							<div class="row g-0 mb-5">
+								<div class="col-12">
+									<span class="d-flex fw-bold news-side-title"
+										>Latest Post</span
+									>
+									<div class="mb-0 news-side-list">
+										<ul>
+											<li>
+												<a href="#" class="">Mauris consequat ut ex vitae</a>
+											</li>
+											<li>
+												<a href="#" class=""
+													>Vitae feugiat Curabitur nec quam tempor</a
+												>
+											</li>
+											<li>
+												<a href="#" class=""
+													>Mauris consequat ut ex vitae feugiat Curabitur</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- repetable section -->
+							<div class="row g-0 mb-5">
+								<div class="col-12">
+									<span class="d-flex fw-bold news-side-title"
+										>Find New Parts</span
+									>
+									<div
+										class="mb-0 position-relative d-flex justify-content-end align-items-end"
+									>
+										<!-- Banner Content -->
+										<div class="position-absolute p-5">
+											<a href="#" class="btn btn-dark"
+												>Find New Parts<i class="bi bi-arrow-right ms-1"></i
+											></a>
+										</div>
+										<img
+											src="../../assets/images/news/side-banner03.jpg"
+											alt=""
+											class="img-fluid"
+										/>
+									</div>
+								</div>
+							</div>
+							<!-- repetable section -->
+							<div class="row g-0">
+								<div class="col-12">
+									<span class="d-flex fw-bold news-side-title">Categories</span>
+									<div class="mb-0 news-side-list">
+										<ul>
+											<li><a href="#" class="">Auto Expo 2020 News</a></li>
+											<li><a href="#" class="">Auto Tips</a></li>
+											<li><a href="#" class="">Automobile Industry</a></li>
+											<li><a href="#" class="">Best cars</a></li>
+											<li><a href="#" class="">BS6 Compliant Variants</a></li>
+											<li><a href="#" class="">Best Auto Parts</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- repetable section -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Part -->
+		<footer class="footer pt-4">
+			<!-- Contacto  -->
+			<div class="container">
+				<div class="row">
+					<!-- Información de contacto -->
+					<div class="col-12 col-md-6 col-lg-4">
+						<h3 class="fs-5 mb-4 mt-0 mt-lg-5 text-uppercase futura-std-xb">
+							Contactanos en
+						</h3>
+						<div class="d-flex">
+							<p class="mb-0"><i class="bi bi-geo-alt-fill fs-5 me-3"></i></p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Dirección</span>
+								<span class="d-flex">Leguizamón Onésimo 459, Neuquén, Neuquén</span>
+								<span class="d-flex">Río Negro 519, Neuquén, Neuquén</span>
+								<span class="d-flex">Miguel Muñoz 67, Cipolletti, Rio Negro</span>
+							</p>
+						</div>
+						<div class="d-flex mt-3">
+							<p class="mb-0"><i class="bi bi-telephone-fill fs-5 me-3"></i></p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Líneas de contacto:</span>
+								<span class="d-flex">
+									Sucursal Leguizamón: (0299) 448-1628 <br />
+									Sucursal Río Negro: (0299) 447-0670 <br />
+									Sucursal Cipolletti: (0299) 477-8352 <br />
+									Horarios de atención: <br />
+									Lunes a Viernes de 09:00 a 18:00
+									<br>
+									Sábados de 09:00 a 12:00
+								</span>
+							</p>
+						</div>
+						<div class="d-flex mt-3">
+							<p class="mb-0">
+								<i class="bi bi-envelope-open-fill fs-5 me-3"></i>
+							</p>
+							<p class="mb-0 font-small">
+								<span class="mb-2">Envianos un correo a:</span>
+								<span class="d-flex">info@distryser.com.ar</span>
+							</p>
+						</div>
+					</div>
+					<!-- Enlaces útiles -->
+					<div class="col-12 col-md-6 col-lg-5">
+						<div class="row">
+							<div class="col-12">
+								<h3 class="fs-5 mb-4 mt-5 text-uppercase futura-std-xb">
+									Información
+								</h3>
+							</div>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<ul class="footer-link">
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)"
+													>Información sobre Envíos</a
+												>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Política de privacidad</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Preguntas Frecuentes</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-6">
+										<ul class="footer-link">
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Mi cuenta</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Historial de compra</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Noticias</a>
+											</li>
+											<li>
+												<i class="bi bi-plus"></i
+												><a href="javascript:void(0)">Partners</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 custom">
+						<div class="mt-5 mt-md-0 mt-lg-5">
+							<a href="../../index.html">
+								<img
+									src="../../assets/img/lg_distry/distryser_marca__footer.webp"
+									class="img-fluid"
+									alt="Brand light"
+								/>
+							</a>
+						</div>
+						<p class="mt-4 font-small lh-base">
+							Desde 1995, hemos destacado por nuestra dedicación y excelencia en
+							el servicio. Con un catálogo de más de 15,000 productos, nos
+							centramos en comprender las necesidades de nuestros clientes y
+							establecer relaciones sólidas con partners de confianza. Nuestro
+							equipo, altamente comprometido y profesional, asegura una
+							experiencia positiva y personalizada, fortaleciendo la relación
+							con cada cliente.
+						</p>
+						<h3 class="mt-4 h5 mb-4 futura-std-xb">Seguinos en:</h3>
+						<div class="d-flex social mt-3">
+							<a href="javascript:void(0)" class="fs-4 pe-3"
+								><i class="bi bi-facebook"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-twitter"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-linkedin"></i
+							></a>
+							<a href="javascript:void(0)" class="fs-4 px-3"
+								><i class="bi bi-instagram"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="row my-2">
+					<ul
+						class="d-flex flex-row flex-wrap justify-content-center align-items-center"
+					></ul>
+				</div>
+			</div>
+			<!-- Info marca y RRSS -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row py-2"></div>
+				</div>
+			</div>
+			<a
+				href="#wrapper"
+				data-type="section-switch"
+				class="scrollup theme-border-radius"
+				><i class="bi bi-chevron-double-up"></i
+			></a>
+		</footer>
+		<!-- quick view modal -->
+		<div
+			class="modal fade"
+			id="quickViewModal"
+			tabindex="-1"
+			aria-labelledby="quickViewModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body p-5 pb-0">
+						<div
+							class="position-absolute top-0 end-0 me-3 mt-3"
+							id="quickViewModalLabel"
+						>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<!-- product gallery -->
+								<div class="product-gallery">
+									<div class="slider slider-for">
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product01.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product01.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product02.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product02.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product03.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product03.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product04.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product04.png"
+												alt="solar"
+											/>
+										</div>
+										<div
+											class="zoom"
+											onmousemove="zoom(event)"
+											style="
+												background-image: url(../../assets/images/product/parts-product05.png);
+											"
+										>
+											<img
+												src="../../assets/images/product/parts-product05.png"
+												alt="solar"
+											/>
+										</div>
+									</div>
+									<div class="slider slider-nav gallery-thumb">
+										<div>
+											<img
+												src="../../assets/images/product/parts-product01.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product02.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product03.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product04.png"
+												alt="solar"
+											/>
+										</div>
+										<div>
+											<img
+												src="../../assets/images/product/parts-product05.png"
+												alt="solar"
+											/>
+										</div>
+									</div>
+									<!-- products thumb -->
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="ps-lg-8 mt-6 mt-lg-0">
+									<a href="#!" class="mb-3 d-block">Wheel Tyres</a>
+									<h2 class="mb-1 h4">Integer Iaculis Porttitor Risus</h2>
+									<div class="mb-4">
+										<small class="text-warning">
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-fill"></i>
+											<i class="bi bi-star-half"></i
+										></small>
+										<a href="#" class="ms-2">(30 reviews)</a>
+									</div>
+									<div class="fs-4">
+										<span class="fw-bold theme-text-secondary">$32</span>
+										<span class="text-decoration-line-through text-muted"
+											>$35</span
+										><span
+											><small class="fs-6 ms-2 text-danger"
+												>26% Off</small
+											></span
+										>
+									</div>
+									<hr class="my-6" />
+									<div class="mb-4">
+										<h3 class="h5 mb-3">Material</h3>
+										<button
+											type="button"
+											class="btn btn-outline-secondary mb-2 mb-lg-0"
+										>
+											Steel
+										</button>
+										<button
+											type="button"
+											class="btn btn-outline-secondary mb-2 mb-lg-0"
+										>
+											Aluminium
+										</button>
+										<button
+											type="button"
+											class="btn btn-outline-secondary mb-2 mb-lg-0"
+										>
+											Thorium
+										</button>
+									</div>
+									<div
+										class="mt-3 row justify-content-start g-2 align-items-center"
+									>
+										<div class="col-12 col-md-3">
+											<div class="input-group input-spinner">
+												<span class="button-minus btn btn-sm">-</span>
+												<input
+													type="text"
+													value="1"
+													class="quantity-field form-control-sm form-input"
+												/>
+												<span class="button-plus btn btn-sm">+</span>
+											</div>
+										</div>
+										<div class="col-12 col-md-5 custom-button">
+											<!-- button -->
+											<!-- btn -->
+											<button
+												type="button"
+												class="custom-btn-primary font-small button-effect justify-content-center align-items-center d-flex"
+											>
+												<i class="feather-icon icon-shopping-bag me-2"></i>Add
+												to cart
+											</button>
+										</div>
+										<div class="col-12 col-md-4">
+											<!-- btn -->
+											<a
+												class="btn btn-light"
+												href="#"
+												data-bs-toggle="tooltip"
+												data-bs-html="true"
+												aria-label="Compare"
+												><i class="bi bi-arrow-left-right"></i
+											></a>
+											<a
+												class="btn btn-light"
+												href="#"
+												data-bs-toggle="tooltip"
+												data-bs-html="true"
+												aria-label="Wishlist"
+												><i class="bi bi-heart"></i
+											></a>
+										</div>
+									</div>
+									<hr class="my-6" />
+									<div>
+										<table class="table table-borderless">
+											<tbody>
+												<tr>
+													<td>Product Code:</td>
+													<td>FBB00255</td>
+												</tr>
+												<tr>
+													<td>Availability:</td>
+													<td>
+														<span class="badge text-bg-success">In Stock</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Type:</td>
+													<td>Wheel</td>
+												</tr>
+												<tr>
+													<td>Shipping:</td>
+													<td>
+														<small
+															>01 day shipping.<span class="text-muted"
+																>( Free pickup today)</span
+															></small
+														>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer text-center justify-content-center">
+						<p>See full details</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Dependencies: Bootstrap Bundle with Popper / jQuery first -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+		<script src="../../assets/js/slick.min.js"></script>
+		<script src="../../assets/js/slick-animation.min.js"></script>
+		<script src="../../assets/js/wow.min.js"></script>
+
+		<!-- theme main js -->
+		<script src="../../assets/js/main.js"></script>
+	</body>
+</html>
