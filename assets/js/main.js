@@ -189,8 +189,8 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 5,
+    autoplaySpeed: 1000,
+    slidesToShow: 6,
     slidesToScroll: 1,
     responsive: [
       {
@@ -258,7 +258,6 @@ $(document).ready(function () {
 
 // On Scroll back to top
 $(window).on('scroll', function () {
-
   // Back Top Button
   if ($(window).scrollTop() > 500) {
     $('.scrollup').addClass('back-top');

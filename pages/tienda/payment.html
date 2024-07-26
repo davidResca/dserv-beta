@@ -556,7 +556,7 @@
 							<div
 								class="d-flex justify-content-between p-3 border-bottom align-items-center"
 							>
-								<span class="fs-4 fw-bold">Payment Method</span>
+								<span class="fs-4 fw-bold">Método de pago</span>
 							</div>
 							<!-- manage address section -->
 							<div class="d-flex flex-column justify-content-between p-3">
@@ -566,117 +566,16 @@
 										<div class="col-12 col-md-12 p-0">
 											<div class="row g-0">
 												<!-- payment tab section -->
-												<div
-													class="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-3"
-												>
-													<div
-														class="nav flex-column nav-pills me-1 custom-tab"
-														id="v-pills-tab"
-														role="tablist"
-														aria-orientation="vertical"
-													>
-														<button
-															class="nav-link active"
-															id="v-pills-credit-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-credit"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-credit"
-															aria-selected="true"
-														>
-															<i class="payment-icon credit"></i>Credit Card
+												<div class="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-3">
+													<div class="nav flex-column nav-pills me-1 custom-tab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+														<button class="nav-link active" id="v-pills-credit-tab" data-bs-toggle="pill" data-bs-target="#v-pills-credit" type="button" role="tab" aria-controls="v-pills-credit" aria-selected="true">
+															<i class="payment-icon credit"></i>Tarjeta de Crédito
 														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-debit-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-debit"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-debit"
-															aria-selected="false"
-														>
-															<i class="payment-icon debit"></i>Debit Card
+														<button class="nav-link" id="v-pills-debit-tab" data-bs-toggle="pill" data-bs-target="#v-pills-debit" type="button" role="tab" aria-controls="v-pills-debit" aria-selected="false">
+															<i class="payment-icon debit"></i>Débito
 														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-net-banking-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-net-banking"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-net-banking"
-															aria-selected="false"
-														>
-															<i class="payment-icon net"></i>Net Banking
-														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-upi-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-upi"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-upi"
-															aria-selected="false"
-														>
-															<i class="payment-icon upi"></i>UPI
-														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-appPay-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-appPay"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-appPay"
-															aria-selected="false"
-														>
-															<i class="payment-icon phone"></i>PhonePay/ Paytm
-														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-wallet-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-wallet"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-wallet"
-															aria-selected="false"
-														>
-															<i class="payment-icon wallet"></i>Mobile Wallet
-														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-payPal-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-payPal"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-payPal"
-															aria-selected="false"
-														>
-															<i class="payment-icon paypal"></i>Paypal
-														</button>
-
-														<button
-															class="nav-link"
-															id="v-pills-emi-tab"
-															data-bs-toggle="pill"
-															data-bs-target="#v-pills-emi"
-															type="button"
-															role="tab"
-															aria-controls="v-pills-emi"
-															aria-selected="false"
-														>
-															<i class="payment-icon emi"></i>No Cost EMI
+														<button class="nav-link" id="v-pills-net-banking-tab" data-bs-toggle="pill" data-bs-target="#v-pills-net-banking" type="button" role="tab" aria-controls="v-pills-net-banking" aria-selected="false">
+															<i class="payment-icon net"></i>Transferencia Bancaria
 														</button>
 													</div>
 												</div>
@@ -695,7 +594,7 @@
 															<div class="row">
 																<div class="col-12 mb-3">
 																	<span class="d-flex fw-bold mb-3"
-																		>Pay with Credit Card</span
+																		>Pagar con tarjeta de crédito</span
 																	>
 																</div>
 																<div class="col-12 col-xl-10">
@@ -703,7 +602,7 @@
 																		<label
 																			for="exampleInputNumber"
 																			class="form-label"
-																			>Card Number</label
+																			>Número de tarjeta</label
 																		>
 																		<input
 																			type="email"
@@ -716,7 +615,7 @@
 																		<label
 																			for="exampleInputName"
 																			class="form-label"
-																			>Name on Card</label
+																			>Nombre que figura en la tarjeta</label
 																		>
 																		<input
 																			type="email"
@@ -729,7 +628,7 @@
 																		<div class="row">
 																			<div class="col-12">
 																				<label class="form-label"
-																					>Expiry Date</label
+																					>Fecha de vencimiento</label
 																				>
 																				<div class="row">
 																					<div class="col-6 col-md-6 pe-0">
@@ -737,10 +636,10 @@
 																							class="form-select"
 																							aria-label="Default select example"
 																						>
-																							<option selected>Month</option>
-																							<option value="1">One</option>
-																							<option value="2">Two</option>
-																							<option value="3">Three</option>
+																							<option selected>Mes</option>
+																							<option value="1">Uno</option>
+																							<option value="2">Dos</option>
+																							<option value="3">Tres</option>
 																						</select>
 																					</div>
 																					<div
@@ -750,7 +649,7 @@
 																							class="form-select"
 																							aria-label="Default select example"
 																						>
-																							<option selected>Year</option>
+																							<option selected>Año</option>
 																							<option value="1">One</option>
 																							<option value="2">Two</option>
 																							<option value="3">Three</option>
@@ -762,7 +661,7 @@
 																				<label
 																					for="exampleInputCVV2"
 																					class="form-label"
-																					>CVV Code</label
+																					>Código de seguridad</label
 																				>
 																				<div class="d-flex align-items-center">
 																					<input
@@ -776,8 +675,7 @@
 																						alt="cvv image"
 																					/>
 																					<span class="font-extra-small ms-1"
-																						>3 digits printed on the back of the
-																						card</span
+																						>3 dígitos impresos en el dorso de la tarjeta</span
 																					>
 																				</div>
 																			</div>
@@ -796,8 +694,7 @@
 																				class="form-check-label font-small theme-text-accent-one"
 																				for="flexCheckChecked"
 																			>
-																				Save your card details for faster
-																				checkout. CVV is not saved.
+																				Guarda los detalles de tu tarjeta para futuras compras. No almacenaremos tu código de seguridad.
 																			</label>
 																		</div>
 																	</div>
@@ -816,7 +713,7 @@
 															<div class="row">
 																<div class="col-12 mb-3">
 																	<span class="d-flex fw-bold mb-3"
-																		>Pay with Debit Card</span
+																		>Pagar con tarjeta de débito</span
 																	>
 																</div>
 																<div class="col-12 col-xl-10">
@@ -824,7 +721,7 @@
 																		<label
 																			for="exampleInputNumber2"
 																			class="form-label"
-																			>Card Number</label
+																			>Número de tarjeta</label
 																		>
 																		<input
 																			type="email"
@@ -837,7 +734,7 @@
 																		<label
 																			for="exampleInputName2"
 																			class="form-label"
-																			>Name on Card</label
+																			>Nombre que figura en la tarjeta</label
 																		>
 																		<input
 																			type="email"
@@ -850,7 +747,7 @@
 																		<div class="row">
 																			<div class="col-12">
 																				<label class="form-label"
-																					>Expiry Date</label
+																					>Fecha de vencimiento</label
 																				>
 																				<div class="row">
 																					<div class="col-6 col-md-6 pe-0">
@@ -883,7 +780,7 @@
 																				<label
 																					for="exampleInputCVV"
 																					class="form-label"
-																					>CVV Code</label
+																					>Código de seguridad</label
 																				>
 																				<div class="d-flex align-items-center">
 																					<input
@@ -897,8 +794,7 @@
 																						alt="cvv image"
 																					/>
 																					<span class="font-extra-small ms-1"
-																						>3 digits printed on the back of the
-																						card</span
+																						>3 dígitos impresos en el dorso de la tarjeta</span
 																					>
 																				</div>
 																			</div>
@@ -917,8 +813,7 @@
 																				class="form-check-label font-small theme-text-accent-one"
 																				for="flexCheckChecked2"
 																			>
-																				Save your card details for faster
-																				checkout. CVV is not saved.
+																			Guarda los detalles de tu tarjeta para futuras compras. No almacenaremos tu código de seguridad.
 																			</label>
 																		</div>
 																	</div>
@@ -937,90 +832,11 @@
 															<div class="row">
 																<div class="col-12 mb-3">
 																	<span class="d-flex fw-bold mb-3"
-																		>Pay with Net Banking Card</span
+																		>Pagar con transferencia bancaria</span
 																	>
 																</div>
 															</div>
 														</div>
-
-														<div
-															class="tab-pane fade"
-															id="v-pills-upi"
-															role="tabpanel"
-															aria-labelledby="v-pills-upi-tab"
-														>
-															<!-- UPI content -->
-															<div class="row">
-																<div class="col-12 mb-3">
-																	<span class="d-flex fw-bold mb-3"
-																		>Pay with UPI</span
-																	>
-																</div>
-															</div>
-														</div>
-
-														<div
-															class="tab-pane fade"
-															id="v-pills-appPay"
-															role="tabpanel"
-															aria-labelledby="v-pills-appPay-tab"
-														>
-															<!-- App content -->
-															<div class="row">
-																<div class="col-12 mb-3">
-																	<span class="d-flex fw-bold mb-3"
-																		>Pay with Mobile App</span
-																	>
-																</div>
-															</div>
-														</div>
-
-														<div
-															class="tab-pane fade"
-															id="v-pills-wallet"
-															role="tabpanel"
-															aria-labelledby="v-pills-wallet-tab"
-														>
-															<!-- Wallet content -->
-															<div class="row">
-																<div class="col-12 mb-3">
-																	<span class="d-flex fw-bold mb-3"
-																		>Pay with Wallet</span
-																	>
-																</div>
-															</div>
-														</div>
-
-														<div
-															class="tab-pane fade"
-															id="v-pills-payPal"
-															role="tabpanel"
-															aria-labelledby="v-pills-payPal-tab"
-														>
-															<!-- payPal content -->
-															<div class="row">
-																<div class="col-12 mb-3">
-																	<span class="d-flex fw-bold mb-3"
-																		>Pay with PayPal</span
-																	>
-																</div>
-															</div>
-														</div>
-
-														<div
-															class="tab-pane fade"
-															id="v-pills-emi"
-															role="tabpanel"
-															aria-labelledby="v-pills-emi-tab"
-														>
-															<!-- EMI content -->
-															<div class="row">
-																<div class="col-12 mb-3">
-																	<span class="d-flex fw-bold mb-3"
-																		>Pay with EMI</span
-																	>
-																</div>
-															</div>
 														</div>
 													</div>
 												</div>
@@ -1034,7 +850,7 @@
 												<a
 													href="#"
 													class="d-flex justify-content-center align-items-center custom-btn-primary font-small button-effect px-4"
-													>Pay Now</a
+													>Pagar</a
 												>
 											</div>
 										</div>
@@ -1053,23 +869,23 @@
 								class="d-flex justify-content-between p-3 border-bottom align-items-center"
 							>
 								<span class="fs-4 fw-bold"
-									>Price Details
+									>Detalle
 									<span class="fs-6 theme-text-accent-one"
-										>(5 Items)</span
+										>(cant items)</span
 									></span
 								>
 								<a
 									href="#"
 									class="fw-bold font-extra-small"
 									data-bs-toggle="modal"
-									data-bs-target="#exampleModal"
+									data-bs-target="#detalle-pedido"
 								>
-									View Details
+									Ver detalle
 								</a>
 								<!-- Modal -->
 								<div
 									class="modal fade"
-									id="exampleModal"
+									id="detalle-pedido"
 									tabindex="-1"
 									aria-labelledby="exampleModalLabel"
 									aria-hidden="true"
