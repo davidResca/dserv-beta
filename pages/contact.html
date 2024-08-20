@@ -227,13 +227,7 @@
 												>Ingresar</a
 											>
 										</li>
-										<li>
-											<a
-												class="dropdown-item text-start"
-												href="./cuentaUsuario/signup.html"
-												>Registrarse</a
-											>
-										</li>
+										
 										<li>
 											<a class="dropdown-item text-start" href="">Salir</a>
 										</li>
@@ -591,9 +585,11 @@
 											</div>
 										</div>
 										<div class="flex-grow-1 ms-3">
-											<h2 class="mb-3 fw-bold fs-6">Dirección</h2>
+											<h2 class="mb-3 fw-bold fs-6">Encontranos en:</h2>
 											<p class="mb-0 theme-text-accent-one font-medium">
-												Dirección Distryser
+												Leguizamón Onésimo 459, Neuquén <br />
+												Río Negro 519, Neuquén <br />
+												Miguel Muñoz 67, Cipolletti
 											</p>
 										</div>
 									</div>
@@ -606,20 +602,48 @@
 												<i class="bi bi-telephone-fill fs-2"></i>
 											</div>
 										</div>
+										<!-- Telefonos -->
 										<div class="flex-grow-1 ms-3">
 											<h2 class="mb-3 fw-bold fs-6">Llamanos a:</h2>
 											<p class="mb-0 theme-text-accent-one font-medium">
-												<strong>Sucursal Leguizamón: 0299 448-1628</strong
-												><br />
-												horario de atención: 10:00 - 20:00
+												Suc. Leguizamón: 
+												(0299) 448-1628
 											</p>
 											<p class="mb-0 theme-text-accent-one font-medium">
-												<strong>Sucursal Río Negro: 0299 447-0670</strong><br />
-												horario de atención: 10:00 - 20:00
+												Suc.  Río Negro: 
+												(0299) 447-0670
 											</p>
 											<p class="mb-0 theme-text-accent-one font-medium">
-												<strong>Sucursal Cipoletti: {}</strong><br />
-												horario de atención: 10:00 - 20:00
+												Suc.  Cipoletti: 
+												(0299) 477-8352
+											</p>
+											<div class="mt-5">
+												<p class="mb-0 fw-bold fs-6">
+													Horarios de atención:
+												</p>
+												<br />
+												<p class="mt-0 theme-text-accent-one font-medium">
+													Lunes a Viernes de 09:00 a 18:00 <br />
+													Sábados de 09:00 a 12:00
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- repetabel -->
+									<div class="d-flex align-items-center mb-5">
+										<div class="flex-shrink-0">
+											<div
+												class="d-inline-flex mb-3 p-3 rounded-4 theme-bg-accent-two"
+											>
+												<i class="bi bi-envelope-paper-fill fs-2"></i>
+											</div>
+										</div>
+										<div class="flex-grow-1 ms-3">
+											<h2 class="mb-3 fw-bold fs-6">
+												Envianos un correo electrónico a:
+											</h2>
+											<p class="mb-0 theme-text-accent-one font-medium">
+												<a href="#" class="text-muted">info@distryser.com.ar</a>
 											</p>
 										</div>
 									</div>
@@ -714,13 +738,27 @@
 															>Tu número de teléfono</label
 														>
 														<input
-															type="number"
 															name="phone"
 															class="form-control"
 															id="form_phone"
 															placeholder="Ingresá tu numero de contacto acá"
 															required="required"
 															data-error="Por favor ingresa un número de contacto válido"
+														/>
+														<div class="help-block with-errors"></div>
+													</div>
+													<!-- FORM CUIT -->
+													<div class="mb-3">
+														<label for="cuit" class="fw-bold font-small mb-2"
+															>CUIT</label
+														>
+														<input
+															name="cuit"
+															class="form-control"
+															id="form_cuit"
+															placeholder="Ingresá tu numero de CUIT acá"
+															required="required"
+															data-error="Por favor ingresa un número de CUIT válido"
 														/>
 														<div class="help-block with-errors"></div>
 													</div>
