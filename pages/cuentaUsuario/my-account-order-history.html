@@ -678,6 +678,7 @@
 										<thead>
 											<tr>
 												<th>Fecha Pedido</th>
+												<th>Nro factura</th>
 												<th>Monto</th>
 												<th>Estado</th>
 												<th>Detalle</th>
@@ -686,8 +687,9 @@
 										<tbody>
 											<tr>
 												<td>2024-08-01</td>
+												<td>45978856</td>
 												<td>$150.00</td>
-												<td class="estado-entregado">Entregado</td>
+												<td class="estado-entregado">Facturado</td>
 												<td>
 													<a
 														href="#"
@@ -699,21 +701,9 @@
 											</tr>
 											<tr>
 												<td>2024-08-05</td>
+												<td>45978859</td>
 												<td>$200.00</td>
-												<td class="estado-pendiente">Pendiente</td>
-												<td>
-													<a
-														href="#"
-														data-bs-toggle="modal"
-														data-bs-target="#quickViewModal"
-														>Ver Detalle</a
-													>
-												</td>
-											</tr>
-											<tr>
-												<td>2024-08-10</td>
-												<td>$75.00</td>
-												<td class="estado-cancelado">Cancelado</td>
+												<td class="estado-pendiente">A facturar</td>
 												<td>
 													<a
 														href="#"
@@ -902,64 +892,53 @@
 						<div class="row">
 							<!-- shopping cart section -->
 							<div class="col-lg-8 mb-6 mb-md-0">
-								<div
-									class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow mb-4"
-								>
+								<div class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow mb-4">
 									<!-- title section -->
-									<div
-										class="d-flex justify-content-between p-3 border-bottom align-items-center"
-									>
-										<span class="fs-4 fw-bold"
-											>Orden de compra&nbsp;<span
-												class="fs-6 theme-text-accent-one"
-												>(5 Items)</span
-											></span
-										>
-										<span class="fw-bold"
-											>Total<i class="bi bi-currency-dollar"></i>750.92</span
-										>
+									<div class="d-flex justify-content-between p-3 border-bottom align-items-center">
+										<span class="fs-4 fw-bold">Número de pedido:
+										<span>{nro. ped}</span>
+											<span class="fs-6 theme-text-accent-one">(5 Items)</span>
+										</span>
+										<span class="fw-bold">Total<i class="bi bi-currency-dollar"></i>750.92</span>
 									</div>
 									<!-- detalle pedido -->
 									<div class="d-flex flex-column justify-content-between p-3">
 										<div class="mb-3">
 											<!-- items list -->
-											<div class="border list-group-item p-3 mb-3">
+											<div class="border row p-3 mb-3">
 												<!-- item -->
-												<div class="mb-2 row align-items-center">
-													<div class="col-6 col-md-2">
-														<img
-															src="../../assets/images/product/disk.jpg"
-															alt="Parts"
-															class="img-fluid"
-														/>
-													</div>
-													<div class="col-6 col-md-6 col-lg-5">
-														<a href="javascript:void(0)" class="text-reset">
-															<p class="mb-0 font-small">Nombre de Producto</p>
-														</a>
-													</div>
-													<div class="col-6 col-md-2">
-														<span class="fw-bold">$20.00</span>
-													</div>
-												</div>
-												<!-- item -->
-												<div class="mb-2 row align-items-center">
-													<div class="col-6 col-md-2">
-														<img
-															src="../../assets/images/product/disk.jpg"
-															alt="Parts"
-															class="img-fluid"
-														/>
-													</div>
-													<div class="col-6 col-md-6 col-lg-5">
-														<a href="javascript:void(0)" class="text-reset">
-															<p class="mb-0 font-small">Nombre de Producto</p>
-														</a>
-													</div>
-													<div class="col-6 col-md-2">
-														<span class="fw-bold">$20.00</span>
-													</div>
-												</div>
+												<table>
+													<thead>
+														<tr>
+															<th>Producto</th>
+															<th>Cantidad</th>
+															<th>Precio</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>{nombre producto}</td>
+															<td>{3}</td>
+															<td>{$150.00}</td>
+														</tr>
+														<tr>
+															<td>{nombre producto}</td>
+															<td>{3}</td>
+															<td>{$150.00}</td>
+														</tr>
+														<tr>
+															<td>{nombre producto}</td>
+															<td>{3}</td>
+															<td>{$150.00}</td>
+														</tr>
+														<tr>
+															<td>{nombre producto}</td>
+															<td>{3}</td>
+															<td>{$150.00}</td>
+														</tr>
+													</tbody>
+												</table>
+												
 											</div>
 										</div>
 									</div>
@@ -997,7 +976,7 @@
 										<div class="pt-2">
 											<div class="row">
 												<div class="col-12 col-md-6 col-lg-8 font-small">
-													<p class="mb-2">Costo de envío</p>
+													<p class="mb-2">Impuestos:</p>
 												</div>
 												<div class="col-12 col-md-6 col-lg-4 font-small">
 													<div

@@ -2240,11 +2240,10 @@ a:focus {
 .breadcrumb-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/banners/news-banner.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding: 100px 0;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -2262,7 +2261,7 @@ a:focus {
 }
 
 .img-contact {
-  background-image: url(../img/banners/contact.webp);
+  background-image: url(../img/banners/CONTACTO.png);
 }
 
 .img-privacy {
@@ -2273,6 +2272,10 @@ a:focus {
   background-image: url(../img/banners/terms&cond_vintage_car_img.webp);
 }
 
+.img-noticias {
+  background-image: url(../img/banners/NOTICIAS.png);
+}
+
 .img-about {
   background-image: url(../img/banners/about_metegol_team_img.webp);
 }
@@ -2281,8 +2284,16 @@ a:focus {
   background-image: url(../img/banners/faq-banner.webp);
 }
 
+.img-workwithus {
+  background-image: url(../img/banners/BUSQUEDA\ LABORAL\ 2.png);
+}
+
 .img-partners {
   background-image: url(../img/banners/partners-banner.webp);
+}
+
+.img-sucursales {
+  background-image: url(../img/banners/SUCURSALES.png);
 }
 
 .page-breadcrumb {
@@ -3650,6 +3661,28 @@ header {
   border-radius: 5px;
   height: 30px;
   color: white;
+}
+
+.job-description {
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgb(161, 161, 161);
+}
+.job-description .card-header {
+  font-family: "Futura";
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.job-description .card-body {
+  border: none;
+  z-index: 1;
+  background: #f7f8f4;
+}
+.job-description .card-body .card-text {
+  font-family: "Noto Sans";
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
