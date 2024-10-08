@@ -2261,7 +2261,7 @@ a:focus {
 }
 
 .img-contact {
-  background-image: url(../img/banners/CONTACTO.png);
+  background-image: url(../img/banners/contacto.png);
 }
 
 .img-privacy {
@@ -2273,27 +2273,31 @@ a:focus {
 }
 
 .img-noticias {
-  background-image: url(../img/banners/NOTICIAS.png);
+  background-image: url(../img/banners/noticias.png);
 }
 
 .img-about {
-  background-image: url(../img/banners/about_metegol_team_img.webp);
+  background-image: url(../img/banners/nosotros.png);
+}
+
+.img-error404 {
+  background-image: url(../img/banners/errorMantenimiento.png);
 }
 
 .img-faq {
-  background-image: url(../img/banners/faq-banner.webp);
+  background-image: url(../img/banners/faqs.png);
 }
 
 .img-workwithus {
-  background-image: url(../img/banners/BUSQUEDA\ LABORAL\ 2.png);
+  background-image: url(../img/banners/trabajaconnosotros.png);
 }
 
 .img-partners {
-  background-image: url(../img/banners/partners-banner.webp);
+  background-image: url(../img/banners/proveedores.png);
 }
 
 .img-sucursales {
-  background-image: url(../img/banners/SUCURSALES.png);
+  background-image: url(../img/banners/sucursales.png);
 }
 
 .page-breadcrumb {
@@ -3357,15 +3361,12 @@ header {
 }
 
 /*-- latest news css --*/
-.news .news-card .img-effect .index-fld {
-  min-height: 300px;
-}
 .news .news-card .left {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 0px;
   border-bottom-left-radius: 10px;
 }
 .news .news-card .right {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 0px;
   border-bottom-right-radius: 10px;
 }
 .news .news-card .tags {
