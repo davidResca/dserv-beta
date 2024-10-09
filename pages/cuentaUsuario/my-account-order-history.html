@@ -134,17 +134,17 @@
 							</div>
 						</li>
 					</ul>
-					<!-- botones seguir comprando, actualizar Pedido -->
+					<!-- botones seguir comprando, actualizar carrito -->
 					<div class="d-flex justify-content-between mt-4 custom-button">
 						<a
 							href="#"
-							class="d-flex align-items-center custom-btn-primary font-small button-effect px-2"
+							class="d-flex align-items-center custom-btn-primary font-small button-effect text-center px-2"
 							>Seguir comprando</a
 						>
 						<a
 							href="#"
 							class="theme-border custom-btn-secondary font-small button-effect px-2"
-							>Actualizar Pedido</a
+							>Actualizar pedido</a
 						>
 					</div>
 				</div>
@@ -230,7 +230,7 @@
 												>Ingresar</a
 											>
 										</li>
-										
+
 										<li>
 											<a class="dropdown-item text-start" href="">Salir</a>
 										</li>
@@ -581,14 +581,6 @@
 								</li>
 								<li>
 									<a
-										href="my-account-manage-address.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-geo-alt-fill fs-4 mx-3 align-middle"></i
-										>Mis Direcciones</a
-									>
-								</li>
-								<li>
-									<a
 										href="my-account-order-history.html"
 										class="border-bottom p-2 theme-text-accent-one"
 									>
@@ -605,33 +597,6 @@
 										Pedidos abiertos
 									</a>
 								</li>
-								<li>
-									<a
-										href="my-account-canceled-orders.html"
-										class="border-bottom p-2 theme-text-accent-one"
-									>
-										<i class="bi bi-cart-x fs-4 mx-3 align-middle"></i>
-										Pedidos cancelados
-									</a>
-								</li>
-								<li>
-									<a
-										href="my-account-return-order.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i
-											class="bi bi-arrow-return-left fs-4 mx-3 align-middle"
-										></i
-										>Devoluciones</a
-									>
-								</li>
-								<!-- <li>
-									<a
-										href="my-account-success-message-return.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-chat-text fs-4 mx-3 align-middle"></i
-										>Return Sucess</a
-									>
-								</li> -->
 								<li>
 									<a
 										href="reset-password.html"
@@ -661,7 +626,7 @@
 						>
 							<!-- title section -->
 							<div class="d-flex justify-content-between p-3">
-								<span class="fw-bold">Historial de Pedidos</span>
+								<span class="noto-sans fs-4 fw-bold">Historial de Pedidos</span>
 							</div>
 							<!-- order history section -->
 							<div class="p-3">
@@ -869,7 +834,7 @@
 				><i class="bi bi-chevron-double-up"></i
 			></a>
 		</footer>
-		
+
 		<!-- modal detalle pedido -->
 		<div
 			class="modal fade"
@@ -884,14 +849,21 @@
 						<div class="row">
 							<!-- shopping cart section -->
 							<div class="col-lg-8 mb-6 mb-md-0">
-								<div class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow mb-4">
+								<div
+									class="d-flex flex-column theme-border-radius theme-bg-white theme-box-shadow mb-4"
+								>
 									<!-- title section -->
-									<div class="d-flex justify-content-between p-3 border-bottom align-items-center">
-										<span class="fs-4 fw-bold">Número de pedido:
-										<span>{nro. ped}</span>
+									<div
+										class="d-flex justify-content-between p-3 border-bottom align-items-center"
+									>
+										<span class="fs-4 fw-bold"
+											>Número de pedido:
+											<span>{nro. ped}</span>
 											<span class="fs-6 theme-text-accent-one">(5 Items)</span>
 										</span>
-										<span class="fw-bold">Total<i class="bi bi-currency-dollar"></i>750.92</span>
+										<span class="fw-bold"
+											>Total<i class="bi bi-currency-dollar"></i>750.92</span
+										>
 									</div>
 									<!-- detalle pedido -->
 									<div class="d-flex flex-column justify-content-between p-3">
@@ -930,7 +902,6 @@
 														</tr>
 													</tbody>
 												</table>
-												
 											</div>
 										</div>
 									</div>

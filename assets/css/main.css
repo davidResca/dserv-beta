@@ -3686,4 +3686,27 @@ header {
   font-size: 0.8rem;
 }
 
+/* CHECK FORMULARIO IVA */
+.formIVA {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.formIVA__title {
+  font-size: 1em;
+}
+.formIVA__check-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.formIVA__check {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/*  &check{}
+ &label{} */
+
 /*# sourceMappingURL=main.css.map */

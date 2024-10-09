@@ -134,17 +134,17 @@
 							</div>
 						</li>
 					</ul>
-					<!-- botones seguir comprando, actualizar Pedido -->
+					<!-- botones seguir comprando, actualizar carrito -->
 					<div class="d-flex justify-content-between mt-4 custom-button">
 						<a
 							href="#"
-							class="d-flex align-items-center custom-btn-primary font-small button-effect px-2"
+							class="d-flex align-items-center custom-btn-primary font-small button-effect text-center px-2"
 							>Seguir comprando</a
 						>
 						<a
 							href="#"
 							class="theme-border custom-btn-secondary font-small button-effect px-2"
-							>Actualizar Pedido</a
+							>Actualizar pedido</a
 						>
 					</div>
 				</div>
@@ -581,14 +581,6 @@
 								</li>
 								<li>
 									<a
-										href="my-account-manage-address.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-geo-alt-fill fs-4 mx-3 align-middle"></i
-										>Mis Direcciones</a
-									>
-								</li>
-								<li>
-									<a
 										href="my-account-order-history.html"
 										class="border-bottom p-2 theme-text-accent-one"
 									>
@@ -605,33 +597,6 @@
 										Pedidos abiertos
 									</a>
 								</li>
-								<li>
-									<a
-										href="my-account-canceled-orders.html"
-										class="border-bottom p-2 theme-text-accent-one"
-									>
-										<i class="bi bi-cart-x fs-4 mx-3 align-middle"></i>
-										Pedidos cancelados
-									</a>
-								</li>
-								<li>
-									<a
-										href="my-account-return-order.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i
-											class="bi bi-arrow-return-left fs-4 mx-3 align-middle"
-										></i
-										>Devoluciones</a
-									>
-								</li>
-								<!-- <li>
-									<a
-										href="my-account-success-message-return.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-chat-text fs-4 mx-3 align-middle"></i
-										>Return Sucess</a
-									>
-								</li> -->
 								<li>
 									<a
 										href="reset-password.html"
@@ -661,107 +626,21 @@
 						>
 							<!-- title section -->
 							<div class="d-flex justify-content-between p-3">
-								<span class="fw-bold">Información personal</span>
+								<span class="fs-4 noto-sans fw-bold">Configuración</span>
 							</div>
 							<!-- dashboard section -->
 							<div class="row g-0">
-								<div class="row col-12 g-0">
-									<div class="col-12 col-lg-12 mb-3 mb-lg-0 p-3">
-										<!-- Razon social -->
-										<h2 class="noto-sans fw-medium small fw-bold mb-3">
-											Razón social
-										</h2>
-										<div class="col-12 col-lg-6">
-											<input
-												class="form-control"
-												type="text"
-												value=""
-												aria-label="Disabled input example"
-												disabled
-												readonly
-											/>
-										</div>
-									</div>
-									<!-- nombre cliente -->
-									<div class="col-12 col-lg-4">
-										<div class="d-flex p-3">
-											<input
-												class="form-control"
-												type="text"
-												value="nombre cliente"
-												aria-label="Disabled input example"
-												disabled
-												readonly
-											/>
-										</div>
-									</div>
-									<!-- apellido -->
-									<div class="col-12 col-lg-4">
-										<div class="d-flex p-3">
-											<input
-												class="form-control"
-												type="text"
-												value="apellido cliente"
-												aria-label="Disabled input example"
-												disabled
-												readonly
-											/>
-										</div>
-									</div>
-								</div>
-								<!-- telefono -->
-								<div class="col-12 col-lg-4">
-									<div class="d-flex flex-column p-3">
-										<span class="small fw-bold mb-3">Teléfono de contacto</span>
-										<input
-											class="form-control"
-											type="text"
-											value="9992223344"
-											aria-label="Disabled input example"
-											disabled
-											readonly
-										/>
-									</div>
-								</div>
-								<!-- correo elect -->
-								<div class="col-12 col-lg-4">
-									<div class="d-flex flex-column p-3">
-										<span class="small fw-bold mb-3">Dirección de correo</span>
-										<input
-											class="form-control"
-											type="text"
-											value="cliente@email.com"
-											aria-label="Disabled input example"
-											disabled
-											readonly
-										/>
-									</div>
-								</div>
-								<!-- cuit -->
-								<div class="col-12 col-lg-12 mb-3 mb-lg-0 p-3">
-									<h2 class="noto-sans fw-medium small fw-bold mb-3">CUIT</h2>
-									<div class="col-12 col-lg-6">
-										<input
-											class="form-control"
-											type="number"
-											value=""
-											aria-label="Disabled input example"
-											disabled
-											readonly
-										/>
-									</div>
-								</div>
 
 								<!-- CONFIG PRECIO SUGERIDO -->
 								<div class="col-12 col-lg-12 mb-3 mb-lg-0 p-3">
-									<h2 class="noto-sans fw-medium small fw-bold mb-3">
+									<h2 class="formIVA__title fw-medium fw-semibold noto-sans me-3 mb-4">
 										Configuración de precio sugerido
 									</h2>
-									<div class="col-12 col-lg-6">
+									<div class="col-12 col-lg-4">
 										<input
-											class="form-control"
+											class="form-control py-2 px-2"
 											type="text"
-											value="Ingresar porcentaje de ganancia deseado"
+											value="Porcentaje de ganancia deseado"
 											aria-label="Disabled input example"
 											disabled
 											readonly
@@ -782,6 +661,22 @@
 										</button>
 									</div>
 								</div>
+
+								<div class="formIVA p-3">
+									<h2 class="formIVA__title fw-medium fw-semibold noto-sans me-3 mb-0">Mostrar precio sugerido:</h2>
+									<form class="formIVA__check-container">
+										<div class="formIVA__check">
+											<label class="formIVA__label noto-sans small" for="conIVA">CON IVA</label>
+											<input class="formIVA__input" type="radio" name="ivaOption" id="conIVA" value="option1" checked>
+										</div>
+										<div class="formIVA__check ms-2">
+											<label class="formIVA__label noto-sans small" for="sinIVA">SIN IVA</label>
+											<input class="formIVA__input" type="radio" name="ivaOption" id="sinIVA" value="option2">
+										</div>
+									</form>
+								</div>
+								
+
 							</div>
 							<div
 								class="d-flex col-12 col-lg-12 mb-3 mb-lg-0 justify-content-between"

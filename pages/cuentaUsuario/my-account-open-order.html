@@ -8,15 +8,18 @@
 		<meta name="author" content="ThemesLay" />
 
 		<!-- Favicon icon -->
-		<link	rel="icon"	type="image/png"	sizes="50x50"	href="../../assets/img/favicon/favicon.webp"/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="50x50"
+			href="../../assets/img/favicon/favicon.webp"
+		/>
 
 		<!-- theme CSS -->
 		<link href="../../assets/css/main.css" rel="stylesheet" />
 
 		<!-- page title -->
-		<title>
-			Distryser | Historial de compras
-		</title>
+		<title>Distryser | Historial de compras</title>
 	</head>
 
 	<body>
@@ -29,9 +32,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="p-5 text-center">
-						<h3 class="fs-2 fw-bold">
-							¿Querés salir de tu cuenta?
-						</h3>
+						<h3 class="fs-2 fw-bold">¿Querés salir de tu cuenta?</h3>
 						<p class="font-medium">Has terminado tu sesion.</p>
 						<div class="d-flex justify-content-between mt-4 custom-button">
 							<a
@@ -134,17 +135,17 @@
 							</div>
 						</li>
 					</ul>
-					<!-- botones seguir comprando, actualizar Pedido -->
+					<!-- botones seguir comprando, actualizar carrito -->
 					<div class="d-flex justify-content-between mt-4 custom-button">
 						<a
 							href="#"
-							class="d-flex align-items-center custom-btn-primary font-small button-effect px-2"
+							class="d-flex align-items-center custom-btn-primary font-small button-effect text-center px-2"
 							>Seguir comprando</a
 						>
 						<a
 							href="#"
 							class="theme-border custom-btn-secondary font-small button-effect px-2"
-							>Actualizar Pedido</a
+							>Actualizar pedido</a
 						>
 					</div>
 				</div>
@@ -230,7 +231,7 @@
 												>Ingresar</a
 											>
 										</li>
-										
+
 										<li>
 											<a class="dropdown-item text-start" href="">Salir</a>
 										</li>
@@ -552,7 +553,9 @@
 								</span>
 								<span class="ms-3"
 									><span class="font-extra-small">Hola!</span> <br />
-									<span class="font-small fw-bold">Nombre de usuario</span></span
+									<span class="font-small fw-bold"
+										>Nombre de usuario</span
+									></span
 								>
 							</div>
 						</div>
@@ -573,60 +576,34 @@
 									<a
 										href="my-account-accountSetting.html"
 										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-gear fs-4 mx-3 align-middle"></i>Configuración</a
+										><i class="bi bi-gear fs-4 mx-3 align-middle"></i
+										>Configuración</a
 									>
 								</li>
 								<li>
 									<a
-										href="my-account-manage-address.html"
+										href="my-account-order-history.html"
 										class="border-bottom p-2 theme-text-accent-one"
-										><i
-											class="bi bi-geo-alt-fill fs-4 mx-3 align-middle"
-										></i
-										>Mis Direcciones</a
 									>
-								</li>
-								<li>
-									<a href="my-account-order-history.html" class="border-bottom p-2 theme-text-accent-one" >
 										<i class="bi bi-box-seam fs-4 mx-3 align-middle"></i>
 										Historial de Pedidos
 									</a>
 								</li>
 								<li>
-									<a href="my-account-open-order.html" class="border-bottom p-2 theme-text-accent-one" >
+									<a
+										href="my-account-open-order.html"
+										class="border-bottom p-2 theme-text-accent-one"
+									>
 										<i class="bi bi-cart-check-fill fs-4 mx-3 align-middle"></i>
 										Pedidos abiertos
 									</a>
 								</li>
 								<li>
-									<a href="my-account-canceled-orders.html" class="border-bottom p-2 theme-text-accent-one" >
-										<i class="bi bi-cart-x fs-4 mx-3 align-middle"></i>
-										Pedidos cancelados
-									</a>
-								</li>
-								<li>
-									<a
-										href="my-account-return-order.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i
-											class="bi bi-arrow-return-left fs-4 mx-3 align-middle"
-										></i
-										>Devoluciones</a
-									>
-								</li>
-								<!-- <li>
-									<a
-										href="my-account-success-message-return.html"
-										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-chat-text fs-4 mx-3 align-middle"></i
-										>Return Sucess</a
-									>
-								</li> -->
-								<li>
 									<a
 										href="reset-password.html"
 										class="border-bottom p-2 theme-text-accent-one"
-										><i class="bi bi-shield-lock fs-4 mx-3 align-middle"></i>Restaurar Contraseña</a
+										><i class="bi bi-shield-lock fs-4 mx-3 align-middle"></i
+										>Restaurar Contraseña</a
 									>
 								</li>
 								<li>
@@ -650,9 +627,9 @@
 						>
 							<!-- title section -->
 							<div class="d-flex justify-content-between p-3">
-								<span class="fw-bold">Historial de Pedidos</span>
+								<span class="noto-sans fs-4 fw-bold">Pedidos abiertos</span>
 							</div>
-							<!-- order history section -->
+							<!-- open order list section -->
 							<div class="p-3">
 								<div class="row g-0">
 									<div class="col-12 col-lg-12 mb-3">
@@ -666,11 +643,12 @@
 													/>
 												</div>
 												<div class="col-12 col-md-6 col-lg-6">
-													<p class="mb-0 font-small">
-														{Titulo}
+													<p class="mb-0 font-small noto-sans fw-semibold">
+														Nro de orden:
 													</p>
 													<span
-														><small class="text-muted font-extra-small"
+														><small
+															class="text-muted font-extra-small noto-sans"
 															>{número de orden}</small
 														></span
 													>
@@ -679,8 +657,9 @@
 															href="javascript:void(0)"
 															class="text-decoration-none text-inherit"
 														>
-															<span class="text-muted font-small"
-																>{Estado}
+															<span
+																class="text-muted font-small noto-sans fw-semibold text-black"
+																>Estado:
 																<span class="text-success">{En proceso}</span>
 															</span></a
 														>
@@ -690,8 +669,13 @@
 													class="col-12 col-md-12 col-lg-4 text-lg-end text-start text-md-start"
 												>
 													<div class="d-flex flex-column font-small">
-														<span class="theme-text-primary">{precio total}</span>
-														<span class="theme-text-accent-one mt-2"
+														<span class="theme-text-primary noto-sans"
+															>{precio total}</span
+														>
+														<span class="theme-text-accent-one noto-sans mt-2"
+															>{cant unidades}</span
+														>
+														<span class="theme-text-accent-one noto-sans mt-2"
 															>{fecha}</span
 														>
 													</div>
@@ -699,7 +683,6 @@
 											</div>
 										</div>
 									</div>
-									
 								</div>
 							</div>
 						</div>
@@ -721,9 +704,13 @@
 							<p class="mb-0"><i class="bi bi-geo-alt-fill fs-5 me-3"></i></p>
 							<p class="mb-0 font-small">
 								<span class="mb-2">Dirección</span>
-								<span class="d-flex">Leguizamón Onésimo 459, Neuquén, Neuquén</span>
+								<span class="d-flex"
+									>Leguizamón Onésimo 459, Neuquén, Neuquén</span
+								>
 								<span class="d-flex">Río Negro 519, Neuquén, Neuquén</span>
-								<span class="d-flex">Miguel Muñoz 67, Cipolletti, Rio Negro</span>
+								<span class="d-flex"
+									>Miguel Muñoz 67, Cipolletti, Rio Negro</span
+								>
 							</p>
 						</div>
 						<div class="d-flex mt-3">
@@ -736,7 +723,7 @@
 									Sucursal Cipolletti: (0299) 477-8352 <br />
 									Horarios de atención: <br />
 									Lunes a Viernes de 09:00 a 18:00
-									<br>
+									<br />
 									Sábados de 09:00 a 12:00
 								</span>
 							</p>
