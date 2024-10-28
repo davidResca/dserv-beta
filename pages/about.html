@@ -76,8 +76,8 @@
 					<!-- Pedido: lista de productos -->
 					<ul class="list-group list-group-flush">
 						<!-- Item Pedido -->
-						<li class="list-group-item py-3 ps-0 border-top">
-							<div class="row align-items-center">
+						<li class="list-group-item py-3 ps-0 border-top d-flex flex-column flex-sm-row align-items-end align-items-sm-center">
+							<div class="row align-items-center justify-content-between">
 								<!-- producto: imagen -->
 								<div class="col-3 col-md-2">
 									<img
@@ -124,10 +124,11 @@
 										<span class="button-plus btn btn-sm">+</span>
 									</div>
 								</div>
-								<!-- producto: precio -->
-								<div class="col-2 text-lg-end text-start text-md-end col-md-2">
-									<span class="fw-bold">$5.00</span>
-								</div>
+							</div>
+							<!-- producto: precio -->
+							<div class=" d-flex gap-2 col-12 col-sm-2 justify-content-end">
+								<span class="noto-sans d-sm-none">subtotal</span>
+								<span class="fw-bold noto-sans">$500.000,50</span>
 							</div>
 						</li>
 					</ul>

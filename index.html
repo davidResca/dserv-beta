@@ -78,12 +78,13 @@
 					<!-- Carrito: lista de productos -->
 					<ul class="list-group list-group-flush">
 						<!-- Item Carrito -->
-						<li class="list-group-item py-3 ps-0 border-top">
-							<div class="row align-items-center">
+						<!-- flex-column flex-sm-row -->
+						<li class="list-group-item py-3 ps-0 border-top d-flex flex-column flex-sm-row align-items-end align-items-sm-center">
+							<div class="row align-items-center justify-content-between">
 								<!-- producto: imagen -->
 								<div class="col-3 col-md-2">
 									<img
-										src="assets/images/product/baring.jpg"
+										src="../assets/images/product/baring.jpg"
 										alt="Parts"
 										class="img-fluid"
 									/>
@@ -92,11 +93,11 @@
 								<div class="col-4 col-md-6 col-lg-5">
 									<!-- producto: nombre -->
 									<a href="javascript:void(0)" class="text-inherit">
-										<p class="mb-0 font-small">Parts Pannel</p>
+										<p class="mb-0 font-small">Nombre Producto</p>
 									</a>
 									<span
 										><small class="text-muted font-extra-small"
-											>1 Qty.</small
+											>Cantidad:</small
 										></span
 									>
 									<!-- boton quitar producto -->
@@ -108,7 +109,9 @@
 											<span class="me-1 align-middle"
 												><i class="bi bi-trash"></i
 											></span>
-											<span class="text-muted font-extra-small">Quitar</span>
+											<span class="text-muted font-extra-small"
+												>Quitar del Pedido</span
+											>
 										</a>
 									</div>
 								</div>
@@ -124,10 +127,11 @@
 										<span class="button-plus btn btn-sm">+</span>
 									</div>
 								</div>
-								<!-- producto: precio -->
-								<div class="col-2 text-lg-end text-start text-md-end col-md-2">
-									<span class="fw-bold">$5.00</span>
-								</div>
+							</div>
+							<!-- producto: precio -->
+							<div class=" d-flex gap-2 col-12 col-sm-2 justify-content-end">
+								<span class="noto-sans d-sm-none">subtotal</span>
+								<span class="fw-bold noto-sans">$500.000,50</span>
 							</div>
 						</li>
 					</ul>
@@ -621,9 +625,7 @@
 					<!-- card noticias 1 -->
 					<div class="col-6 col-lg-3 mb-4">
 						<div class="news-card row g-0 offer-page">
-							<div
-								class="overflow-hidden position-relative left col-12"
-							>
+							<div class="overflow-hidden position-relative left col-12">
 								<figure class="mb-0">
 									<img
 										class="w-100"
